@@ -1,0 +1,32 @@
+
+
+/* City Card */
+.cityCard_wrap {
+  background-image: url('https://i.natgeofe.com/n/90e37eca-f03a-45c9-a0b5-67609d37fd0b/sto_3x4.jpg');
+  background-size: cover;
+  border: 1px solid black;
+  width: 15rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cityCard_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cityCard_btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Warm Jobs */
+.warm_wrap {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
