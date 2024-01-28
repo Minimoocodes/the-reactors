@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import WarmJobs from "./pages/WarmJobs";
 import ColdJobs from "./pages/ColdJobs";
+import ApplyPage from "./pages/ApplyPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/warm" element={<WarmJobs />} />
         <Route path="/cold" element={<ColdJobs />} />
+        <Route path="/apply" element={<ApplyPage />} />
       </Routes>
     </div>
   );
