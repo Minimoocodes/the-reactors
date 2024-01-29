@@ -1,0 +1,50 @@
+{
+    "frontend-developer": {
+        "jobAdd": {
+            "title":"Frontend developer",
+            "description":"Join our team as a Frontend Developer! We're seeking someone with expertise in HTML, CSS, and JavaScript to craft engaging user experiences. Experience with modern frameworks like React or Vue.js is a plus. If you're passionate about creating sleek interfaces and collaborating with designers and backend developers, apply now!"
+        }
+    },
+    "fullstack-developer": {
+        "jobAdd": {
+            "title":"Fullstack developer",
+            "description":"Are you a versatile Fullstack Developer looking for an exciting opportunity? Join our dynamic team where you'll work on both frontend and backend systems. Proficiency in frontend technologies like HTML, CSS, and JavaScript is essential, along with backend languages like Node.js or Python. Experience with databases and frameworks is a bonus. Apply today and be part of building innovative web solutions!"
+        } 
+    },
+    "backend-developer": {
+        "jobAdd": {
+            "title":"Backend developer",
+            "description":"We're hiring a skilled Backend Developer to join our engineering team! If you're proficient in languages like Python, Java, or Node.js and have experience with database technologies like SQL or NoSQL, we want to hear from you. Help us architect scalable and efficient backend systems to power our applications. Apply now and contribute to cutting-edge projects!"
+        }
+    },
+    "data-analyst": {
+        "jobAdd": {
+            "title":"Data Analyst",
+            "description":"Join our team as a Data Analyst and unlock insights from complex datasets! We're looking for someone with strong analytical skills and proficiency in tools like SQL, Python, or R. Experience with data visualization and statistical analysis is a plus. If you're passionate about transforming data into actionable insights, apply today and help drive data-driven decisions!"
+        }
+    },
+    "ux-designer": {
+        "jobAdd": {
+            "title":"UX Designer",
+            "description":"Are you a creative UX Designer who loves crafting intuitive user experiences? Join our team and collaborate closely with product managers and developers to design elegant solutions. Proficiency in prototyping tools like Adobe XD or Figma and a strong understanding of user-centered design principles are essential. If you're passionate about creating delightful experiences, apply now and shape the future of our products!"
+        }
+    },
+    "scrum-master": {
+        "jobAdd": {
+            "title":"Scrum Master",
+            "description":"We're seeking an experienced Scrum Master to facilitate Agile processes and drive continuous improvement! If you have a proven track record of guiding teams towards successful project delivery and fostering a culture of collaboration, we want to hear from you. Strong communication and leadership skills are essential. Join us and help teams thrive in an Agile environment!"
+        }
+    },
+    "senior-software-engineer": {
+        "jobAdd": {
+            "title":"Senior Software Engineer",
+            "description":"Join our team as a Senior Software Engineer and lead the development of cutting-edge solutions! We're looking for seasoned professionals with expertise in multiple programming languages and a strong foundation in software architecture and design patterns. If you have a passion for mentoring junior developers and delivering high-quality code, apply now and make an impact on our projects!"
+        }
+    },
+    "it-support": {
+        "jobAdd": {
+            "title":"IT-Support",
+            "description":"We're hiring IT Support professionals to provide technical assistance and troubleshooting for our internal systems and users. If you have strong problem-solving skills and a customer-focused mindset, we want to hear from you. Experience with desktop support, network troubleshooting, and ticketing systems is preferred. Join our team and help keep our technology running smoothly!"
+        }
+    }
+}
