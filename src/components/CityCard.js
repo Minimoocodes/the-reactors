@@ -19,9 +19,18 @@ const CityCard = ({ city, images }) => {
     getWeatherByCity();
   }, [city]);
 
+  // let backgroundImg = images.city;
+
   return (
-    <div className="cityCard_wrap">
-      <div className="cityCard_content" style={{ backgroundImage: `` }}>
+    <div
+      className="cityCard_wrap"
+      style={{
+        backgroundImage: `url(
+          "${images[city]}"
+        )`,
+      }}
+    >
+      <div className="cityCard_content">
         <h1>{city}</h1>
         <h3>{weather?.main?.temp}/c</h3>
         <h3>{weather?.weather?.[0].description}</h3>
