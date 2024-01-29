@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import JobAdds from "../components/JobAdd";
 
+export default function ApplyPage({ title, description }) {
 
-export default function ApplyPage() {
+    console.log(title)
+    console.log(description)
+
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -22,8 +24,8 @@ export default function ApplyPage() {
 
     return (
         <div className="job_wrapper">
-            <JobAdds></JobAdds>
-
+            <p className="job_title">{title}</p>
+            <p className="job_description">{description}</p>
             <form method="post" onSubmit={handleSubmit} className="apply_form">
                 <label>
                     First and last name: <input name="myInput" placeholder={"John Doe"} />

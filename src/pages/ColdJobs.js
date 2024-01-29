@@ -1,7 +1,7 @@
 import React from "react";
 import CityCard from "../components/CityCard.js";
 
-const WarmJobs = () => {
+const ColdJobs = ({ jsonData, apply }) => {
   const coldCities = ["Stockholm", "New York", "Paris", "Seoul", "London"];
 
   return (
@@ -13,4 +13,4 @@ const WarmJobs = () => {
   );
 };
 
-export default WarmJobs;
+export default ColdJobs;
