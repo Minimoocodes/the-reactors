@@ -9,13 +9,21 @@
 
 /* Warm Or Cold Card */
 .WarmOrColdCard_wrap {
-  background-image: url("/public/image/warm_weather.png");
+  /* background-image: url("/public/image/warm_weather.png"); */
   background-size: cover;
   border: 1px solid black;
   width: 15rem;
   height: 20rem;
   padding: 1rem;
   border-radius: 1rem;
+}
+
+.Warm {
+  background-image: url("/public/image/warm_weather.png");
+}
+
+.Cold {
+  background-image: url("/public/image/cold_weather.png");
 }
 
 .WarmOrColdCard_content {
