@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import WarmJobs from "./pages/WarmJobs";
 import ColdJobs from "./pages/ColdJobs";
 import ApplyPage from "./pages/ApplyPage";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
