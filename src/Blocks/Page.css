@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .page {
+    padding: 0 20px 30px 20px;
+  }
+}
