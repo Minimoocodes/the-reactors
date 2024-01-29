@@ -18,13 +18,14 @@ const CityCard = ({ city, images }) => {
   useEffect(() => {
     getWeatherByCity();
   }, [city]);
+
   return (
     <div className="cityCard_wrap">
       <div className="cityCard_content" style={{ backgroundImage: `` }}>
         <h1>{city}</h1>
         <h3>{weather?.main?.temp}/c</h3>
         <h3>{weather?.weather?.[0].description}</h3>
-        <button className="cityCard_btn">See available jobs</button>
+        {/* <button className="cityCard_btn" onClick={()=>}>See available jobs</button> */}
       </div>
     </div>
   );

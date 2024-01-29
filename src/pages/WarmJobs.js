@@ -1,5 +1,6 @@
 import React from "react";
 import CityCard from "../components/CityCard";
+import { useNavigate } from "react-router-dom";
 
 const WarmJobs = () => {
   const warmCities = ["Dubai", "Los Angeles", "Cebu", "Bali", "Sydney"];
@@ -10,12 +11,54 @@ const WarmJobs = () => {
     bali: `https://content.api.news/v3/images/bin/59806f50929d8578cca0a01e7f90ea78`,
     sydney: `https://www.aircalin.com/sites/default/files/styles/hero_banner_mobile/public/2022-08/Sydney-min.jpg?h=8edabf11&itok=KPO8L4Ug`,
   };
+  const navigate = useNavigate();
+  const goToJobApply = (job) => {
+    // navigate(`/${job}`);
+    console.log("clicked job is", job);
+  };
 
   return (
     <div className="warm_wrap">
       {warmCities.map((city) => (
         <CityCard city={city} images={images} />
       ))}
+      <div>
+        <ul>
+          <li onClick={() => goToJobApply("dataanalyst")}>Data Analyst</li>
+
+          <li>UX designer</li>
+
+          <li>Frontend Developer</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Data Analyst</li>
+          <li>UX designer</li>
+          <li>Frontend Developer</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Data Analyst</li>
+          <li>UX designer</li>
+          <li>Frontend Developer</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Data Analyst</li>
+          <li>UX designer</li>
+          <li>Frontend Developer</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Data Analyst</li>
+          <li>UX designer</li>
+          <li>Frontend Developer</li>
+        </ul>
+      </div>
     </div>
   );
 };
