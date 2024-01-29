@@ -2,10 +2,12 @@ import React from "react";
 import WarmOrColdCard from "../components/WarmOrColdCard";
 
 const WarmOrCold = () => {
+  const warmOrColdArray = ["warm", "cold"];
+
   return (
-    <div className="warmorcold-wrap">
-      {warmOrCold.map((warmOrColdDisplay) => (
-        <WarmOrColdCard warmOrColdDisplay={warmOrColdDisplay} />
+    <div className="WarmOrCold_wrap">
+      {warmOrColdArray.map((warmOrColdDisplay, index) => (
+        <WarmOrColdCard key={index} warmOrColdDisplay={warmOrColdDisplay} />
       ))}
     </div>
   );

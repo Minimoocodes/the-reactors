@@ -1,6 +1,15 @@
+/*Warm Or Cold Page*/
+.WarmOrCold_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 /* Warm Or Cold Card */
 .WarmOrColdCard_wrap {
-  background-image: "../public/image/warm_weather.png";
+  background-image: url("/public/image/warm_weather.png");
   background-size: cover;
   border: 1px solid black;
   width: 15rem;
