@@ -5,6 +5,7 @@ export const profile = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+    link: [Linkedin, Github],
   },
   {
     name: "Jaemin Shim",
@@ -12,6 +13,7 @@ export const profile = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+    link: [Linkedin, Github],
   },
 
   {
@@ -20,6 +22,7 @@ export const profile = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+    link: [Linkedin, Github],
   },
 
   {
@@ -28,5 +31,7 @@ export const profile = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Physton"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+
+    link: [Linkedin, Github],
   },
 ];
