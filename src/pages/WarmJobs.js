@@ -13,7 +13,7 @@ const WarmJobs = () => {
   };
   const navigate = useNavigate();
   const goToJobApply = (job) => {
-    // navigate(`/${job}`);
+    navigate(`/${job}`);
     console.log("clicked job is", job);
   };
 
