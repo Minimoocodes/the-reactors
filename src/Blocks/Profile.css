@@ -1,0 +1,14 @@
+.profile-container {
+  width: 120vh;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.profile-image {
+  width: 200px;
+  height: auto;
+}
