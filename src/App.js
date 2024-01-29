@@ -7,6 +7,7 @@ import ApplyPage from "./pages/ApplyPage";
 function App() {
   return (
     <div>
+      <NavBar />
       hello we are reactors
       <Routes>
         <Route path="/warm" element={<WarmJobs />} />

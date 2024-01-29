@@ -1,6 +1,6 @@
 /* City Card */
 .cityCard_wrap {
-  background-image: url('https://i.natgeofe.com/n/90e37eca-f03a-45c9-a0b5-67609d37fd0b/sto_3x4.jpg');
+  background-image: url("https://i.natgeofe.com/n/90e37eca-f03a-45c9-a0b5-67609d37fd0b/sto_3x4.jpg");
   background-size: cover;
   border: 1px solid black;
   width: 15rem;
@@ -29,6 +29,7 @@
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 
 /* Apply Page */
 
@@ -51,3 +52,21 @@
 .apply_message {
   
 }
+=======
+/* Apply Page */
+
+.job_wrapper {
+}
+
+.job_title {
+}
+
+.job_description {
+}
+
+.apply_form {
+}
+
+.apply_message {
+}
+>>>>>>> AboutUs-Heidi
