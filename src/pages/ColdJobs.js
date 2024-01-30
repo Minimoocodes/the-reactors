@@ -1,7 +1,7 @@
 import React from "react";
 import CityCard from "../components/CityCard.js";
 
-const WarmJobs = () => {
+const ColdJobs = ({ jsonData, apply }) => {
   const coldCities = ["Stockholm", "New York", "Paris", "Seoul", "London"];
   const images = {
     Stockholm: `https://i.natgeofe.com/n/90e37eca-f03a-45c9-a0b5-67609d37fd0b/sto_3x4.jpg`,
@@ -20,4 +20,4 @@ const WarmJobs = () => {
   );
 };
 
-export default WarmJobs;
+export default ColdJobs;

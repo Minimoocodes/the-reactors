@@ -1,16 +1,20 @@
 import React from "react";
 import { useState } from "react";
-import JobAdds from "../components/JobAdd";
+import { useParams } from "react-router-dom";
 
-export default function ApplyPage() {
+export default function ApplyPage({ jsonData }) {
+  const { id, location } = useParams();
+
+  console.log("the id and location here is", id, location);
+
   function handleSubmit(e) {
     e.preventDefault();
 
     const form = e.target;
-    // const formData = new FormData(form);
+    const formData = new FormData(form);
 
-    // const formJson = Object.fromEntries(formData.entries());
-    // console.log(formJson);
+    const formJson = Object.fromEntries(formData.entries());
+    console.log(formJson);
   }
 
   const [message, setMessage] = useState(false);
@@ -20,6 +24,8 @@ export default function ApplyPage() {
 
   return (
     <div className="job_wrapper">
+      <p className="job_title">{jsonData[id].title}</p>
+      <p className="job_description">{jsonData[id].description}</p>
       <form method="post" onSubmit={handleSubmit} className="apply_form">
         <label>
           First and last name: <input name="myInput" placeholder={"John Doe"} />
