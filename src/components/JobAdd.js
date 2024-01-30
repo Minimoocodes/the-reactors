@@ -1,7 +1,3 @@
 export default function JobAdds() {
-    return (
-        <>
-
-        </>
-    )
+  return <>the job details here</>;
 }
