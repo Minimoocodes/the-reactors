@@ -20,9 +20,9 @@ export const Profile = [
     name: "Daniel",
     fullName: "Daniel Pettersson",
     image: "/image/profile3.png",
-    skills: ["HTML", "CSS", "JavaScript", "React"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Music", "Hardware"],
     description:
-      "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+      "A Multitalented Developer. Proficient in Webdevelpment and coding. Passionated about anything that has to do with music and electronic devices.",
   },
 
   {
