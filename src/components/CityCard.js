@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const CityCard = ({ city }) => {
+const CityCard = ({ city, images }) => {
   const apiKey = "1938c0075c90b56822f16d9a4b53e74f";
   const [weather, setWeather] = useState("");
 
@@ -18,13 +18,14 @@ const CityCard = ({ city }) => {
   useEffect(() => {
     getWeatherByCity();
   }, [city]);
+
   return (
     <div className="cityCard_wrap">
-      <div className="cityCard_content">
+      <div className="cityCard_content" style={{ backgroundImage: `` }}>
         <h1>{city}</h1>
         <h3>{weather?.main?.temp}/c</h3>
         <h3>{weather?.weather?.[0].description}</h3>
-        <button className="cityCard_btn">See available jobs</button>
+        {/* <button className="cityCard_btn" onClick={()=>}>See available jobs</button> */}
       </div>
     </div>
   );

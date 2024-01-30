@@ -5,6 +5,7 @@ import ColdJobs from "./pages/ColdJobs";
 import ApplyPage from "./pages/ApplyPage";
 import WarmOrColdPage from "./pages/WarmOrColdPage";
 import NavBar from "./components/NavBar";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
         <Route path="/warm" element={<WarmJobs />} />
         <Route path="/cold" element={<ColdJobs />} />
         <Route path="/apply" element={<ApplyPage />} />
+
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
+
+        <Route path="/aboutus" element={<AboutUsPage />} />
+
       </Routes>
     </div>
   );
