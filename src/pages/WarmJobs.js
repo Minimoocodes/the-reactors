@@ -1,5 +1,6 @@
 import React from "react";
 import CityCard from "../components/CityCard";
+import JobListBox from "../components/JobListBox";
 
 const WarmJobs = ({ jsonData, apply }) => {
   const warmCities = ["Dubai", "Los Angeles", "Cebu", "Bali", "Sydney"];
@@ -11,49 +12,19 @@ const WarmJobs = ({ jsonData, apply }) => {
     sydney: `https://www.aircalin.com/sites/default/files/styles/hero_banner_mobile/public/2022-08/Sydney-min.jpg?h=8edabf11&itok=KPO8L4Ug`,
   };
 
-
+  const jobList = Object.entries(jsonData);
   return (
-    <div className="warm_wrap">
+    <div>
       {warmCities.map((city) => (
-        <CityCard city={city} images={images} />
+        <>
+          <div className="warm_wrap">
+            <CityCard city={city} images={images} />
+          </div>
+          <div className="warm_wrap">
+            <JobListBox city={city} job={jobList} />
+          </div>
+        </>
       ))}
-      <div>
-        <ul>
-          <li onClick={() => apply("Data analyst", "dunno drugs lol")}>Data Analyst</li>
-
-          <li>UX designer</li>
-
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
     </div>
   );
 };
