@@ -1,14 +1,18 @@
 .profile-container {
-  width: 120vh;
+  width: 155vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   margin: auto;
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  gap: 20;
 }
 
 .profile-image {
-  width: 200px;
+  width: 210px;
   height: auto;
 }
+
+.

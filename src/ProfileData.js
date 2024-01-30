@@ -5,7 +5,9 @@ export const Profile = [
     image: "/image/profile1.png",
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
-      "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+      "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. I bring creativity and functionality together to craft seamless web experiences.",
+    project1: "/image/heidiproject1.jpg",
+    project2: "/image/heidiproject2.jpg",
   },
   {
     name: "Jaemin",

@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-image: url(../Assets/Background\ Image@2x.svg);
+}
+
 @media screen and (max-width: 780px) {
   .page {
     padding: 0 20px 30px 20px;

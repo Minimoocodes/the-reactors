@@ -6,7 +6,6 @@ function NavBar() {
   return (
     <div
       style={{
-        backgroundColor: "#2f0742",
         minHeight: 50,
         paddingLeft: 10,
         paddingRight: 20,
@@ -14,7 +13,6 @@ function NavBar() {
         display: "flex",
         fontSize: "1.3em",
         color: "#FFD801",
-        fontFamily: "ItikKecil",
         gap: 2,
       }}
     >
