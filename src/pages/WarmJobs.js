@@ -1,8 +1,8 @@
 import React from "react";
 import CityCard from "../components/CityCard";
-import { useNavigate } from "react-router-dom";
+import JobListBox from "../components/JobListBox";
 
-const WarmJobs = () => {
+const WarmJobs = ({ jsonData, apply }) => {
   const warmCities = ["Dubai", "Los Angeles", "Cebu", "Bali", "Sydney"];
   const images = {
     Dubai: `https://www.civitatis.com/blog/wp-content/uploads/2022/12/panoramica-burj-al-arab-dubai.jpg`,
@@ -11,54 +11,20 @@ const WarmJobs = () => {
     bali: `https://content.api.news/v3/images/bin/59806f50929d8578cca0a01e7f90ea78`,
     sydney: `https://www.aircalin.com/sites/default/files/styles/hero_banner_mobile/public/2022-08/Sydney-min.jpg?h=8edabf11&itok=KPO8L4Ug`,
   };
-  const navigate = useNavigate();
-  const goToJobApply = (job) => {
-    navigate(`/${job}`);
-    console.log("clicked job is", job);
-  };
 
+  const jobList = Object.entries(jsonData);
   return (
-    <div className="warm_wrap">
+    <div>
       {warmCities.map((city) => (
-        <CityCard city={city} images={images} />
+        <>
+          <div className="warm_wrap">
+            <CityCard city={city} images={images} />
+          </div>
+          <div className="warm_wrap">
+            <JobListBox city={city} job={jobList} />
+          </div>
+        </>
       ))}
-      <div>
-        <ul>
-          <li onClick={() => goToJobApply("dataanalyst")}>Data Analyst</li>
-
-          <li>UX designer</li>
-
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Data Analyst</li>
-          <li>UX designer</li>
-          <li>Frontend Developer</li>
-        </ul>
-      </div>
     </div>
   );
 };
