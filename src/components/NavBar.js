@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Assets/NavLogo copy.png";
 import "../index.css";
 
@@ -29,8 +30,8 @@ function NavBar() {
       >
         <li className="nav-menu">
           <p>Home</p>
-          <p>Find a job</p>
-          <p>About us</p>
+          <Link to="/warmorcold">Find a job</Link>
+          <Link to="/profiles">About us</Link>
         </li>
       </div>
     </div>

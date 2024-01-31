@@ -17,18 +17,29 @@
   margin: auto;
 }
 
-.skills-section {
-  text-align: left;
-  width: 40vh;
-}
-
 .project-section {
-  float: "left";
   margin-bottom: 10;
   margin-top: 10;
   border: "1px solid #D9D9D9";
   padding: 5;
   width: "100px";
+  text-align: left;
+}
+
+.skills-section {
+  text-align: left;
+  width: 40vh;
+}
+
+.skills-ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.skills-name {
+  gap: 5;
 }
 
 p {

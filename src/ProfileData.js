@@ -1,4 +1,4 @@
-export const Profile = [
+const profilesData = [
   {
     name: "Heidi",
     fullName: "Heidi Espiritu",
@@ -42,3 +42,5 @@ export const Profile = [
     project2: "/image/petraproject2.png",
   },
 ];
+
+export default profilesData;

@@ -1,88 +1,62 @@
-import React, { useState } from "react";
-
 const Profile = ({
   name,
-  fullName,
   image,
   skills,
   description,
   project1,
   project2,
+  isActive,
+  onToggleProfile,
 }) => {
-  const [isHidden, setIsHidden] = useState(true);
-
   const toggleHidden = () => {
-    setIsHidden(!isHidden);
+    onToggleProfile(name);
   };
 
-  const closeHiddenProfile = () => {
-    setIsHidden(true);
+  const closeProfile = () => {
+    onToggleProfile(null);
   };
 
   return (
     <div style={{ marginTop: 30, marginLeft: 15 }}>
-      <div onClick={toggleHidden} style={{ cursor: "pointer" }}>
-        <img
-          className="profile-image"
-          width={180}
-          src={image}
-          alt={`${name}'s profile`}
-        />
-        <h2>{name}</h2>
-      </div>
-      <p
-        style={{
-          fontFamily: "Inter-Regular",
-          fontSize: 25,
-          letterSpacing: 0,
-          top: 0,
-          width: 299,
-        }}
-      >
-        {description}
-      </p>
-      {!isHidden && (
+      {isActive && (
         <div>
-          <button onClick={closeHiddenProfile} style={{ float: "right" }}>
+          <button onClick={closeProfile} style={{ float: "right" }}>
             X
           </button>
-          {/* Skills Section */}
-          <div className="hidden-profile">
-            <div className="skills-section">
+
+          <div className="hidden-profile" style={{ display: "flex" }}>
+            {/* profile buttons intro when clicked */}
+            <div style={{ marginRight: 20, flex: 1 }}>
               <div
-                style={{
-                  marginBottom: 10,
-                  marginTop: 10,
-                  border: "1px solid #D9D9D9",
-                  padding: 5,
-                }}
+                className="introduction"
+                onClick={toggleHidden}
+                style={{ cursor: "pointer" }}
               >
+                <img
+                  className="profile-image"
+                  width={180}
+                  src={image}
+                  alt={`${name}'s profile`}
+                />
+                <h2>{name}</h2>
+                <p>{description}</p>
+              </div>
+              {/* skills */}
+              <div className="skills-section">
                 <h2>Skills:</h2>
-                <ul>
-                  {skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
+                <p>{skills}</p>
               </div>
             </div>
 
-            {/* Projects Section */}
-            <div
-              className="project-section"
-              style={{
-                marginBottom: 10,
-                marginTop: 10,
-                border: "1px solid #D9D9D9",
-                padding: 5,
-              }}
-            >
-              <div>
+            <div style={{ flex: 1 }}>
+              {/* projcts */}
+              <div className="project-section">
                 {project1 && (
                   <div style={{ marginBottom: 10 }}>
                     <h2>Recent Projects</h2>
                     <img
                       src={project1}
-                      style={{ width: "100%" }}
+                      style={{ width: "70%" }}
                       alt="Project 1"
                     />
                   </div>
@@ -91,7 +65,7 @@ const Profile = ({
                   <div>
                     <img
                       src={project2}
-                      style={{ width: "100%" }}
+                      style={{ width: "70%" }}
                       alt="Project 2"
                     />
                   </div>
@@ -99,6 +73,23 @@ const Profile = ({
               </div>
             </div>
           </div>
+        </div>
+      )}
+      {/* profile container */}
+      {!isActive && (
+        <div
+          className="introduction"
+          onClick={toggleHidden}
+          style={{ cursor: "pointer" }}
+        >
+          <img
+            className="profile-image"
+            width={180}
+            src={image}
+            alt={`${name}'s profile`}
+          />
+          <h2>{name}</h2>
+          <p>{description}</p>
         </div>
       )}
     </div>
