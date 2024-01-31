@@ -1,10 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
+  // To get only the job titles from the jsondata(job)
   let joblist = job.map((item) => item[0]);
 
+  // To generate random and different jobs for each <Citycard />. these are attemps, haven't succeeded yet
   const showRandomJobs = () => {
     let randomNum = Math.floor(Math.random() * joblist.length);
     let randomIndex = Math.floor(Math.random() * randomNum);
@@ -17,13 +21,10 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
     showRandomJobs();
   }, []);
 
+  // To push the savedjobs into SavedJobs array
   const handleJobSave = (p) => {
     setSavedJobs([...savedJobs, p]);
   };
-
-  useEffect(() => {
-    console.log("saved jobs are", savedJobs);
-  }, [savedJobs]);
 
   return (
     <div>
@@ -32,7 +33,15 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
           <Link to={`/apply/${key}/${city}`}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <li>{item.title}</li>
-              <button onClick={() => handleJobSave(item.title)}>save</button>
+              <button
+                className="save_btn"
+                onClick={() => handleJobSave(item.title, city)}
+              >
+                <FontAwesomeIcon
+                  icon={faBookmark}
+                  style={{ color: "ffffff" }}
+                />
+              </button>
             </div>
           </Link>
         ))}

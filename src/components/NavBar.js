@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Logo from "../Assets/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
@@ -38,10 +37,11 @@ function NavBar({ savedJobs }) {
       >
         <p>Home</p>
         <p>Find a job</p>
-        <p onClick={showSavedJobs}>Save jobs({savedJobs.length})</p>
-        {showSavedJobs}
-        <SavedJobs />
         <p>About us</p>
+        <button className="savedjobs_btn" onClick={showSavedJobs}>
+          Saved jobs({savedJobs.length})
+        </button>
+        {showJobsCart ? <SavedJobs savedJobs={savedJobs} /> : null}
       </div>
     </div>
   );

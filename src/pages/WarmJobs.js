@@ -12,7 +12,9 @@ const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     Sydney: `https://www.aircalin.com/sites/default/files/styles/hero_banner_mobile/public/2022-08/Sydney-min.jpg?h=8edabf11&itok=KPO8L4Ug`,
   };
 
+  // to convert the json data into array
   const jobList = Object.entries(jsonData);
+
   return (
     <div className="cities_wrap">
       {warmCities.map((city) => (

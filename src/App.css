@@ -8,9 +8,7 @@
   position: absolute;
   z-index: -1;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
   opacity: 0.6;
   background-size: cover;
   width: 15rem;
@@ -31,8 +29,6 @@
   z-index: 1;
 }
 
-
-
 .weather_description {
   display: flex;
   align-items: center;
@@ -43,6 +39,8 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  max-width: 84rem;
+  margin: 2rem auto;
 }
 
 .cities_content {
@@ -60,15 +58,42 @@
   border-radius: 1rem;
 }
 
+
 .joblist {
   list-style: none;
-
 }
 
 .joblist li {
   margin-bottom: 0.5rem;
-  color: black;
   font-size: 1.2rem;
+}
+
+.save_btn {
+  background-color: transparent;
+  border: none;
+}
+.savedjobs_btn {
+  position: relative;
+}
+.saved_jobs {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+  text-align: end;
+  background-color: white;
+  opacity: 0.9;
+  padding: 1rem;
+}
+
+.saved_jobs li {
+ color: #09D0D8;
+ margin-bottom: 0.5rem;
+ transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.saved_jobs li:hover {
+  box-shadow: inset 222px 0 0 0 #09D0D8;
+  color: white;
 }
 /* Warm Jobs */
 

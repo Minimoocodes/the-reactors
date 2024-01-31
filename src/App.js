@@ -9,7 +9,6 @@ import LandingPage from "./pages/LandingPage";
 import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from "react";
 import ProfilePage from "./pages/ProfilePage";
 
 function App() {

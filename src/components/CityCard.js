@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 
 const CityCard = ({ city, images }) => {
+  // Weather API fetching
   const apiKey = "1938c0075c90b56822f16d9a4b53e74f";
   const [weather, setWeather] = useState("");
 
@@ -18,8 +19,6 @@ const CityCard = ({ city, images }) => {
   useEffect(() => {
     getWeatherByCity();
   }, [city]);
-
-  // let backgroundImg = images.city;
 
   return (
     <div className="div_wrap">
