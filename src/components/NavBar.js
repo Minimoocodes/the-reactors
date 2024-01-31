@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Assets/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
@@ -14,7 +15,6 @@ function NavBar({ savedJobs }) {
   return (
     <div
       style={{
-        backgroundColor: "#2f0742",
         minHeight: 50,
         paddingLeft: 10,
         paddingRight: 20,
@@ -22,7 +22,6 @@ function NavBar({ savedJobs }) {
         display: "flex",
         fontSize: "1.3em",
         color: "#FFD801",
-        fontFamily: "ItikKecil",
         gap: 2,
       }}
     >
@@ -31,7 +30,6 @@ function NavBar({ savedJobs }) {
         style={{
           marginLeft: "auto",
           display: "flex",
-          gap: 25,
           paddingLeft: 10,
           paddingRight: 20,
           paddingTop: 10,

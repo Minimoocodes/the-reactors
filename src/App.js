@@ -5,11 +5,12 @@ import ColdJobs from "./pages/ColdJobs";
 import ApplyPage from "./pages/ApplyPage";
 import WarmOrColdPage from "./pages/WarmOrColdPage";
 import NavBar from "./components/NavBar";
-import AboutUsPage from "./pages/AboutUsPage";
 import LandingPage from "./pages/LandingPage";
 import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   const data = json;
@@ -35,7 +36,7 @@ function App() {
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
 
-        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/profiles" element={<ProfilePage />} />
 
         <Route path="/" element={<LandingPage navigate={handleNavigation} />} />
         <Route
