@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      hello we are reactors
+
       <Routes>
 
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
