@@ -75,7 +75,7 @@ const Profile = ({
           </div>
         </div>
       )}
-      {/* profile container */}
+      {/* profile container div*/}
       {!isActive && (
         <div
           className="introduction"
