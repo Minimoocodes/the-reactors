@@ -6,8 +6,8 @@ export const Profile = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. I bring creativity and functionality together to craft seamless web experiences.",
-    project1: "/image/heidiproject1.jpg",
-    project2: "/image/heidiproject2.jpg",
+    project1: "/image/heidiproject1.png",
+    project2: "/image/heidiproject2.png",
   },
   {
     name: "Jaemin",
@@ -16,6 +16,8 @@ export const Profile = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+    project1: "/image/minproject1.png",
+    project2: "/image/minproject2.png",
   },
 
   {
@@ -25,6 +27,8 @@ export const Profile = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Music", "Hardware"],
     description:
       "A Multitalented Developer. Proficient in Webdevelpment and coding. Passionated about anything that has to do with music and electronic devices.",
+    project1: "/image/danielproject1.png",
+    project2: "/image/danielproject2.png",
   },
 
   {
@@ -34,5 +38,7 @@ export const Profile = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Physton"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
+    project1: "/image/petraproject1.png",
+    project2: "/image/petraproject2.png",
   },
 ];

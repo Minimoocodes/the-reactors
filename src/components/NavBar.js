@@ -21,16 +21,17 @@ function NavBar() {
         style={{
           marginLeft: "auto",
           display: "flex",
-          gap: 25,
           paddingLeft: 10,
           paddingRight: 20,
           paddingTop: 10,
           color: "#09D0D8",
         }}
       >
-        <p>Home</p>
-        <p>Find a job</p>
-        <p>About us</p>
+        <li className="nav-menu">
+          <p>Home</p>
+          <p>Find a job</p>
+          <p>About us</p>
+        </li>
       </div>
     </div>
   );

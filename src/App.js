@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      hello we are reactors
+
       <Routes>
         <Route path="/warm" element={<WarmJobs />} />
         <Route path="/cold" element={<ColdJobs />} />
