@@ -10,13 +10,13 @@ import LandingPage from "./pages/LandingPage";
 import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from "react";
 
 function App() {
   const data = json;
   console.log(data["backend-developer"]);
 
   const [jobDetails, setJobDetails] = useState([]);
+  const [savedJobs, setSavedJobs] = useState([]);
 
   const navigate = useNavigate();
   function handleApplyForJob(title, description) {
@@ -30,10 +30,9 @@ function App() {
 
   return (
     <div>
-      <NavBar />
+      <NavBar savedJobs={savedJobs} />
       hello we are reactors
       <Routes>
-
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
 
         <Route path="/aboutus" element={<AboutUsPage />} />
@@ -41,11 +40,25 @@ function App() {
         <Route path="/" element={<LandingPage navigate={handleNavigation} />} />
         <Route
           path="/warm"
-          element={<WarmJobs jsonData={data} apply={handleApplyForJob} />}
+          element={
+            <WarmJobs
+              jsonData={data}
+              apply={handleApplyForJob}
+              savedJobs={savedJobs}
+              setSavedJobs={setSavedJobs}
+            />
+          }
         />
         <Route
           path="/cold"
-          element={<ColdJobs jsonData={data} apply={handleApplyForJob} />}
+          element={
+            <ColdJobs
+              jsonData={data}
+              apply={handleApplyForJob}
+              savedJobs={savedJobs}
+              setSavedJobs={setSavedJobs}
+            />
+          }
         />
         <Route
           path="/apply/:id/:location"

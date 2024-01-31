@@ -1,8 +1,16 @@
 import React from "react";
 import Logo from "../Assets/NavLogo copy.png";
+import { useState } from "react";
+import SavedJobs from "./SavedJobs";
 import "../index.css";
 
-function NavBar() {
+function NavBar({ savedJobs }) {
+  const [showJobsCart, setShowJobsCart] = useState(false);
+
+  const showSavedJobs = () => {
+    setShowJobsCart(!showJobsCart);
+  };
+
   return (
     <div
       style={{
@@ -32,6 +40,9 @@ function NavBar() {
       >
         <p>Home</p>
         <p>Find a job</p>
+        <p onClick={showSavedJobs}>Save jobs({savedJobs.length})</p>
+        {showSavedJobs}
+        <SavedJobs />
         <p>About us</p>
       </div>
     </div>

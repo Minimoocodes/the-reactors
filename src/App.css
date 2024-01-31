@@ -1,7 +1,18 @@
 /* City Card */
+.div_wrap {
+  position: relative;
+  z-index: 1;
+}
+
 .cityCard_wrap {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
   background-size: cover;
-  border: 1px solid black;
   width: 15rem;
   height: 20rem;
   padding: 1rem;
@@ -14,14 +25,32 @@
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
-.cityCard_btn {
-  padding: 0.5rem;
-  border-radius: 10px;
-  border: none;
+
+
+.weather_description {
+  display: flex;
+  align-items: center;
 }
 
+/* warm and cold jos page */
+.cities_wrap {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cities_content {
+
+}
+.warm_wrap {
+  margin-bottom: 1rem;
+}
 /* Job list Box */
 .joblist_wrap {
   border: 1px solid black;
@@ -31,12 +60,17 @@
   border-radius: 1rem;
 }
 
-/* Warm Jobs */
-.warm_wrap {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.joblist {
+  list-style: none;
+
 }
+
+.joblist li {
+  margin-bottom: 0.5rem;
+  color: black;
+  font-size: 1.2rem;
+}
+/* Warm Jobs */
 
 /* Apply Page */
 
