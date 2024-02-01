@@ -4,31 +4,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
-  // To get only the job titles from the jsondata(job)
-  let joblist = job.map((item) => item[0]);
-
+  const jobList = job.map((item) => item[0]);
   const [selectedJobs, setSelectedJobs] = useState([]);
-
-  // To generate random and different jobs for each <Citycard />. these are attempts, haven't succeeded yet
   const showRandomJobs = () => {
-    const randomNumOfJobs = Math.floor(Math.random() * joblist.length) + 1; //randomize the number of jobs
-    let randomJobArray = [...joblist].sort(() => Math.random() - 0.5); //shuffle array instead of sorting
-    let selectedJobs = randomJobArray.slice(0, randomNumOfJobs);
-    setSelectedJobs(selectedJobs);
-
-    console.log("selected jobs are", selectedJobs);
+    const storedJobs = JSON.parse(localStorage.getItem(`selectedJobs_${city}`)); //retrieves data from the browser's local storage.
+    if (storedJobs) {
+      setSelectedJobs(storedJobs);
+    } else {
+      let randomNumOfJobs = Math.floor(Math.random() * jobList.length) + 1;
+      randomNumOfJobs = Math.max(2, randomNumOfJobs); //make sures that there are atleast 2 joblisting.
+      let randomJobArray = jobList.sort(() => Math.random() - 0.5); //randomize the array job list
+      let selectedJobs = randomJobArray.slice(0, randomNumOfJobs); //takesthe first elemsnets from the randomized array
+      setSelectedJobs(selectedJobs);
+      localStorage.setItem(
+        `selectedJobs_${city}`,
+        JSON.stringify(selectedJobs)
+      );
+    }
   };
-
   useEffect(() => {
     showRandomJobs();
   }, [city]);
-
-  // To push the savedjobs into SavedJobs array
-  const handleJobSave = (jobTitle, city) => {
-    setSavedJobs([...savedJobs, { jobTitle, city }]);
+  useEffect(() => {
+    localStorage.setItem(`selectedJobs_${city}`, JSON.stringify(selectedJobs));
+  }, [selectedJobs, city]);
+  const handleJobSave = (jobTitle) => {
+    setSavedJobs([...savedJobs, jobTitle]);
   };
-
-  console.log("job is ", job);
   return (
     <div>
       <ul className="joblist">
@@ -38,7 +40,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
               <li>{jobTitle}</li>
               <button
                 className="save_btn"
-                onClick={() => handleJobSave(jobTitle, city)}
+                onClick={() => handleJobSave(jobTitle)}
               >
                 <FontAwesomeIcon
                   icon={faBookmark}
@@ -52,5 +54,4 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
     </div>
   );
 };
-
 export default JobListBox;
