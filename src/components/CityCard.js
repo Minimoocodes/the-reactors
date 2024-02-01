@@ -23,7 +23,7 @@ const CityCard = ({ city, images }) => {
   return (
     <div className="div_wrap">
       <div
-        className="cityCard_wrap"
+        className="cityCard_img"
         style={{
           backgroundImage: `url(
           "${images[city]}"
@@ -40,7 +40,7 @@ const CityCard = ({ city, images }) => {
           />
           <h3>{weather?.weather?.[0].description}</h3>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className="weather_humidity">
           <div style={{ textAlign: "center" }}>
             <h4>Humidity</h4>
             <h4>

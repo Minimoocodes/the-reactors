@@ -31,7 +31,7 @@ const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
   return (
     <div className="cities_wrap">
       {warmCities.map((city) => (
-        <div className="cities_content">
+        <div>
           <div className="warm_wrap">
             <CityCard city={city} images={images} />
           </div>
