@@ -1,5 +1,6 @@
 import React from "react";
 import CityCard from "../components/CityCard.js";
+import JobListBox from "../components/JobListBox.js";
 
 const ColdJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
   const coldCities = [
