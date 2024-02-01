@@ -1,5 +1,6 @@
 import React from "react";
 import WarmOrColdCard from "../components/WarmOrColdCard";
+import "../index.css";
 
 const WarmOrCold = () => {
   const warmOrColdArray = ["warm", "cold"];

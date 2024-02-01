@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import profilesData from "../ProfileData";
 import Profile from "../components/profile";
+import "../index.css";
 
 const ProfilePage = () => {
   const [activeProfile, setActiveProfile] = useState(null);

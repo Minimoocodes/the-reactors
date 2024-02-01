@@ -4,10 +4,16 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("/public/font/Inter-Regular.ttf") format("truetype");
+}
+
 body {
   background-image: url(../Assets/Background\ Image@2x.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Inter";
 }
 
 .page {
@@ -19,6 +25,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  font-family: "Inter", sans-serif;
 }
 
 @media screen and (max-width: 780px) {
@@ -26,8 +33,6 @@ body {
     padding: 0 20px 30px 20px;
   }
 }
-
-/*  */
 
 @media screen and (max-width: 1000px) {
   .page {
@@ -53,6 +58,7 @@ li {
   list-style-type: none;
   color: #ffffff;
 }
+
 a {
   color: #09d0d8;
   text-decoration: none;
