@@ -26,7 +26,7 @@ function NavBar({ savedJobs }) {
         backgroundColor: "#D3D3D340",
       }}
     >
-      <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
+      <Link to="/"><img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} /></Link>
       <div
         style={{
           marginLeft: "auto",

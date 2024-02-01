@@ -1,3 +1,44 @@
+/* Landing Page CSS*/
+
+.landing-page__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-page__logo {
+  width: 30rem;
+  padding: 5rem;
+}
+
+.landing-page__text {
+  padding: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.looking-for-job__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 0.4rem;
+  background-color: #09d1d871;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+
 /* City Card */
 .div_wrap {
   position: relative;
@@ -169,16 +210,80 @@
 /* Apply Page */
 
 .job_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .job_title {
+  font-size: 3rem;
 }
 
 .job_description {
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 .apply_form {
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  
+}
+
+.apply_form > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.apply__input {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #09d1d87e;
+}
+
+.apply-input__about {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  height: 8rem;
+  background-color: #09d1d87e;
+}
+
+.apply__button {
+  border-radius: 10px;
+  background-color: #09D0D8;
+  color:black;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.3rem
 }
 
 .apply_message {
+  font-size: 1.5rem;
+
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #D3D3D340;
+  width: 100%;
+  min-height: 3rem;
+}
+
+.footer > p {
+  margin: 0;
 }
