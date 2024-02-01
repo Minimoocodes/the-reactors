@@ -1,5 +1,10 @@
 import React from "react";
 import CityCard from "../components/CityCard.js";
+<<<<<<< Updated upstream
+=======
+import JobListBox from "../components/JobListBox.js";
+import "../index.css";
+>>>>>>> Stashed changes
 
 const ColdJobs = ({ jsonData, apply }) => {
   const coldCities = ["Stockholm", "New York", "Paris", "Seoul", "London"];

@@ -1,6 +1,7 @@
 import React from "react";
 import CityCard from "../components/CityCard";
 import JobListBox from "../components/JobListBox";
+import "../index.css";
 
 const WarmJobs = ({ jsonData, apply }) => {
   const warmCities = ["Dubai", "Los Angeles", "Cebu", "Bali", "Sydney"];
