@@ -41,10 +41,16 @@ const Profile = ({
                 <h2>{name}</h2>
                 <p>{description}</p>
               </div>
-              {/* skills */}
+
+              {/* skills area  */}
               <div className="skills-section">
                 <h2>Skills:</h2>
-                <p>{skills}</p>
+
+                <ul className="skills">
+                  {skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
               </div>
             </div>
 
