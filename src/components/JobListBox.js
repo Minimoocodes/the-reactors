@@ -33,8 +33,8 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
     showRandomJobs();
   }, [city, joblist]);
 
-  const handleJobSave = (jobTitle) => {
-    setSavedJobs([...savedJobs, jobTitle]);
+  const handleJobSave = (jobTitle, city) => {
+    setSavedJobs([...savedJobs, `${jobTitle} - ${city}`]);
   };
 
   return (
@@ -46,7 +46,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
               <li>{jobTitle}</li>
               <button
                 className="save_btn"
-                onClick={() => handleJobSave(jobTitle)}
+                onClick={() => handleJobSave(jobTitle, city)}
               >
                 <FontAwesomeIcon
                   icon={faBookmark}

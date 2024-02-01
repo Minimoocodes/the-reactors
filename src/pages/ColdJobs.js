@@ -21,7 +21,7 @@ const ColdJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     London: `https://cdn-imgix.headout.com/media/images/db48a90d442343a3153acc31fa839a50-Best%20time%20to%20visit%20london%20-%20Tower%20Bridge.jpg`,
     Reykjavik: `https://i.pinimg.com/736x/80/27/b2/8027b2b9c1649471cfc13cd16000a271.jpg`,
     Toronto: `https://media.istockphoto.com/id/626545182/sv/foto/toronto-skyline-with-purple-light-toronto-ontario-canada.jpg?s=612x612&w=0&k=20&c=vu41k0gGbiNeQ8TrB7ghrKEk0K599bQbVsvQMnE4aOo=`,
-    Beijing: `https://lh3.googleusercontent.com/proxy/0i7nasGum5BXBhSSdsBPqbKmnZkKFc_yqDoOyeCzwGDch-tRft-cVOqNUUFgZEpoiKI8ueYEdydd85MvvMYssmsz0xfYzxHoUSh6Zx3L0vJH3It7v2sPbnyPX1TkJLR2UQ`,
+    Beijing: `https://static.euronews.com/articles/stories/03/36/00/68/1200x675_cmsv2_f9f9ddba-f7fa-5fed-aadb-49d2df4d1935-3360068.jpg`,
   };
   const jobList = Object.entries(jsonData);
 
