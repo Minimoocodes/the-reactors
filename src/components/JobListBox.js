@@ -31,7 +31,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
 
   useEffect(() => {
     showRandomJobs();
-  }, [city, joblist]);
+  }, [city, job]);
 
   const handleJobSave = (jobTitle, city) => {
     setSavedJobs([...savedJobs, `${jobTitle} - ${city}`]);
