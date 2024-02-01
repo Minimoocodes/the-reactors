@@ -10,6 +10,7 @@ import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ProfilePage from "./pages/ProfilePage";
+import Footer from "./components/Footer";
 
 function App() {
   const data = json;
@@ -31,7 +32,6 @@ function App() {
   return (
     <div>
       <NavBar savedJobs={savedJobs} />
-      hello we are reactors
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
 
@@ -65,6 +65,7 @@ function App() {
           element={<ApplyPage jsonData={data} />}
         />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
