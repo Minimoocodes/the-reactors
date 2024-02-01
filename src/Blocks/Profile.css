@@ -1,49 +1,83 @@
 .profile-container {
-  width: 140vh;
+  width: 160vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  gap: 20;
+  gap: 30;
   padding: 25;
   align-self: center;
-  margin-left: 250px;
+  margin-left: 110px;
+  margin-top: 50px;
 }
 
 .profile-image {
   width: 210px;
   height: auto;
   margin: auto;
+  gap: 40;
 }
 
-.project-section {
-  margin-bottom: 10;
-  margin-top: 10;
-  border: "1px solid #D9D9D9";
-  padding: 5;
-  width: "100px";
-  text-align: left;
+.hidden-profile {
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 20px;
 }
+
+.hidden-profile-container {
+}
+
+/* skilsl area*/
 
 .skills-section {
+  margin-top: 15px;
+}
+
+.skills-section h2 {
+  margin-bottom: 8px;
   text-align: left;
-  width: 40vh;
 }
 
-.skills-ul {
-  list-style-type: none;
-  padding: 0;
+.skills {
+  list-style: none;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.skills-name {
-  gap: 5;
+.skills li {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  gap: 15px;
 }
+
+/* project area */
+
+.project-section {
+  margin-top: 15px;
+  flex: 1;
+  display: flex; /* Add display: flex */
+}
+
+.project-section h2 {
+  margin-bottom: 8px;
+}
+
+.project-image-container {
+  margin-right: 10px; /* Add margin for spacing between images */
+}
+
+.project-image {
+  width: 80%;
+}
+
+/*font are*/
 
 p {
   color: #ffffff;
+  margin-top: 20px;
 }
 
 h1 {

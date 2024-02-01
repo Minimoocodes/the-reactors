@@ -17,7 +17,10 @@ const Profile = ({
   };
 
   return (
-    <div style={{ marginTop: 30, marginLeft: 15 }}>
+    <div
+      className="hidden-profile-container"
+      style={{ marginTop: 30, marginLeft: 15 }}
+    >
       {isActive && (
         <div>
           <button onClick={closeProfile} style={{ float: "right" }}>
@@ -41,10 +44,16 @@ const Profile = ({
                 <h2>{name}</h2>
                 <p>{description}</p>
               </div>
-              {/* skills */}
+
+              {/* skills area  */}
               <div className="skills-section">
                 <h2>Skills:</h2>
-                <p>{skills}</p>
+
+                <ul className="skills">
+                  {skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
               </div>
             </div>
 
@@ -75,7 +84,7 @@ const Profile = ({
           </div>
         </div>
       )}
-      {/* profile container */}
+      {/* profile container div*/}
       {!isActive && (
         <div
           className="introduction"

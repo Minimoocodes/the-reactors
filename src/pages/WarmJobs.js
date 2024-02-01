@@ -1,6 +1,7 @@
 import React from "react";
 import CityCard from "../components/CityCard";
 import JobListBox from "../components/JobListBox";
+import "../index.css";
 
 const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
   const warmCities = [
@@ -30,7 +31,7 @@ const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
   return (
     <div className="cities_wrap">
       {warmCities.map((city) => (
-        <div className="cities_content">
+        <div>
           <div className="warm_wrap">
             <CityCard city={city} images={images} />
           </div>
