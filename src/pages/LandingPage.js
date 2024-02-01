@@ -1,5 +1,3 @@
-import Logo from "../Assets/NavLogo copy.png";
-
 export default function LandingPage({ navigate }) {
   return (
     <div
@@ -11,6 +9,10 @@ export default function LandingPage({ navigate }) {
         width: "100vw",
         height: "100vh",
       }}
-    ></div>
+    >
+      <div>
+        <img src="/images/reactorslandinglogo.png" />
+      </div>
+    </div>
   );
 }
