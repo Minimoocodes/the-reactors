@@ -17,7 +17,10 @@ const Profile = ({
   };
 
   return (
-    <div style={{ marginTop: 30, marginLeft: 15 }}>
+    <div
+      className="hidden-profile-container"
+      style={{ marginTop: 30, marginLeft: 15 }}
+    >
       {isActive && (
         <div>
           <button onClick={closeProfile} style={{ float: "right" }}>
