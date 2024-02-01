@@ -31,7 +31,6 @@ function App() {
   return (
     <div>
       <NavBar savedJobs={savedJobs} />
-      hello we are reactors
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
 

@@ -1,9 +1,16 @@
+import Logo from "../Assets/NavLogo copy.png";
+
 export default function LandingPage({ navigate }) {
-    return (
-        <>
-            <br />
-            <button onClick={() => navigate("warm")}>go_to_warm</button>
-            <button onClick={() => navigate("cold")}>go_to_cold</button>
-        </>
-    )
+  return (
+    <div
+      style={{
+        backgroundImage: "url(/image/landingpage.png)",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100vh",
+      }}
+    ></div>
+  );
 }

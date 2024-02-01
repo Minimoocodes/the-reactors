@@ -3,6 +3,7 @@ import Logo from "../Assets/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
 import "../index.css";
+import { Link } from "react-router-dom";
 
 function NavBar({ savedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
@@ -22,6 +23,7 @@ function NavBar({ savedJobs }) {
         fontSize: "1.3em",
         color: "#FFD801",
         gap: 2,
+        backgroundColor: "#D3D3D340",
       }}
     >
       <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
@@ -35,13 +37,21 @@ function NavBar({ savedJobs }) {
           color: "#09D0D8",
         }}
       >
-        <p>Home</p>
-        <p>Find a job</p>
-        <p>About us</p>
-        <button className="savedjobs_btn" onClick={showSavedJobs}>
-          Saved jobs({savedJobs.length})
-        </button>
-        {showJobsCart ? <SavedJobs savedJobs={savedJobs} /> : null}
+        <div className="nav-menu">
+          <Link to={"/"}>
+            <p>Home</p>
+          </Link>
+          <Link to={"/warmorcold"}>
+            <p>Find a job</p>
+          </Link>
+          <Link to={"/profiles"}>
+            <p>About us</p>
+          </Link>
+          <button className="savedjobs_btn" onClick={showSavedJobs}>
+            Saved jobs({savedJobs.length})
+          </button>
+          {showJobsCart ? <SavedJobs savedJobs={savedJobs} /> : null}
+        </div>
       </div>
     </div>
   );
