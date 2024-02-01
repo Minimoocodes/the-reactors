@@ -1,4 +1,5 @@
 import landinglogo from "../Assets/reactorslandinglogo_transp.png";
+import { Link } from "react-router-dom";
 
 export default function LandingPage({ navigate }) {
   return (
@@ -27,7 +28,7 @@ export default function LandingPage({ navigate }) {
           </div>
         </div>
         <div className="looking-for-job__wrapper">
-          <button className="button">Check our jobs here!</button>
+          <Link to="/warmorcold"><button className="button">Check our jobs here!</button></Link>
         </div>
       </div>
     </div>
