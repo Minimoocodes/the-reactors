@@ -5,7 +5,7 @@ import SavedJobs from "./SavedJobs";
 import "../index.css";
 import { Link } from "react-router-dom";
 
-function NavBar({ savedJobs, setSavedJobs }) {
+function NavBar({ savedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
 
   const showSavedJobs = () => {
