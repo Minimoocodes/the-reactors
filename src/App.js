@@ -65,7 +65,7 @@ function App() {
           element={<ApplyPage jsonData={data} />}
         />
       </Routes>
-      <Footer></Footer>
+      {/* /<Footer></Footer> */}
     </div>
   );
 }
