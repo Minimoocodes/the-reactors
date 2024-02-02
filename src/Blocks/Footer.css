@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #d3d3d340;
+  width: 100%;
+  min-height: 3rem;
+}
+
+.footer > p {
+  margin: 0;
+}
