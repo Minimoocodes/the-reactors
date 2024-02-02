@@ -28,7 +28,9 @@ export default function LandingPage({ navigate }) {
           </div>
         </div>
         <div className="looking-for-job__wrapper">
-          <Link to="/warmorcold"><button className="button">Check our jobs here!</button></Link>
+          <Link to="/warmorcold">
+            <button className="button">Check our jobs here!</button>
+          </Link>
         </div>
       </div>
     </div>
