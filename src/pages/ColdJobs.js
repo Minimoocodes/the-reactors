@@ -12,6 +12,8 @@ const ColdJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     "Reykjavik",
     "Toronto",
     "Beijing",
+    "Anchorage",
+    "Copenhagen",
   ];
   const images = {
     Stockholm: `https://i.natgeofe.com/n/90e37eca-f03a-45c9-a0b5-67609d37fd0b/sto_3x4.jpg`,
@@ -22,6 +24,8 @@ const ColdJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     Reykjavik: `https://i.pinimg.com/736x/80/27/b2/8027b2b9c1649471cfc13cd16000a271.jpg`,
     Toronto: `https://media.istockphoto.com/id/626545182/sv/foto/toronto-skyline-with-purple-light-toronto-ontario-canada.jpg?s=612x612&w=0&k=20&c=vu41k0gGbiNeQ8TrB7ghrKEk0K599bQbVsvQMnE4aOo=`,
     Beijing: `https://static.euronews.com/articles/stories/03/36/00/68/1200x675_cmsv2_f9f9ddba-f7fa-5fed-aadb-49d2df4d1935-3360068.jpg`,
+    Anchorage: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Anchorage_on_an_April_evening.jpg/308px-Anchorage_on_an_April_evening.jpg`,
+    Copenhagen: `https://www.travelmanagers.com.au/wp-content/uploads/2016/10/AdobeStock_78164903-copenhagen.jpeg`,
   };
   const jobList = Object.entries(jsonData);
 
