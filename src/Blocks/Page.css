@@ -29,6 +29,7 @@ body {
   height: 100%;
   font-family: "Inter";
   min-height: 100vh;
+  position: relative;
 }
 
 .page {
