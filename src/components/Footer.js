@@ -1,18 +1,15 @@
-
-import "../index.css"
+import "../index.css";
 import React from "react";
 import "../index.css";
 
-function Footer() {
+export default function Footer() {
   return (
-    <>
-      <footer className="footer">
+    <div className="footer">
+      <footer className="footer_wrap">
         <p>©thereactors</p>
         <p>Stockholm</p>
         <p>Hyper Island</p>
       </footer>
-    </>
+    </div>
   );
 }
-
-export default Footer;

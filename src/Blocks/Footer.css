@@ -12,3 +12,25 @@
 .footer > p {
   margin: 0;
 }
+
+  background-color: #D3D3D340;
+  width: 100%;
+  min-height: 3rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  .footer > p {
+    margin: 0;
+  }
