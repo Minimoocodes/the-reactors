@@ -11,16 +11,27 @@
 
 body {
   /* background: rgb(2,0,36); */
-  background: linear-gradient(to bottom right, #0F0938 4.5%, #120838 22.1%, #1C083B 36.7%, #2D0741 50.2%, #460648 63.1%, #650451 75.6%, #8C035C 87.7%, #B9016A 99.3%, #BC016B 100%);
+  background: linear-gradient(
+    to bottom right,
+    #0f0938 4.5%,
+    #120838 22.1%,
+    #1c083b 36.7%,
+    #2d0741 50.2%,
+    #460648 63.1%,
+    #650451 75.6%,
+    #8c035c 87.7%,
+    #b9016a 99.3%,
+    #bc016b 100%
+  );
   /* background-image: url(../Assets/Background\ Image@2x.svg); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   font-family: "Inter";
+  min-height: 100vh;
 }
 
 .page {
-  min-height: 100%;
   padding: 0 50px 30px 50px;
   color: rgb(40, 42, 46);
   -moz-osx-font-smoothing: grayscale;
