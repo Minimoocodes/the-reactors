@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <NavBar savedJobs={savedJobs} />
+      <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
 
@@ -65,7 +65,7 @@ function App() {
           element={<ApplyPage jsonData={data} />}
         />
       </Routes>
-      {/* /<Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
