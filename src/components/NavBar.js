@@ -5,7 +5,7 @@ import SavedJobs from "./SavedJobs";
 import "../index.css";
 import { Link } from "react-router-dom";
 
-function NavBar({ savedJobs }) {
+function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
 
   const showSavedJobs = () => {
@@ -26,7 +26,9 @@ function NavBar({ savedJobs }) {
         backgroundColor: "#D3D3D340",
       }}
     >
-      <Link to="/"><img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} /></Link>
+      <Link to="/">
+        <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
+      </Link>
       <div
         style={{
           marginLeft: "auto",
