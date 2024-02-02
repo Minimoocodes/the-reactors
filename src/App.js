@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <NavBar savedJobs={savedJobs} />
+      <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       hello we are reactors
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />

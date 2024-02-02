@@ -4,7 +4,7 @@ import { useState } from "react";
 import SavedJobs from "./SavedJobs";
 import "../index.css";
 
-function NavBar({ savedJobs }) {
+function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
 
   const showSavedJobs = () => {
@@ -41,7 +41,9 @@ function NavBar({ savedJobs }) {
         <button className="savedjobs_btn" onClick={showSavedJobs}>
           Saved jobs({savedJobs.length})
         </button>
-        {showJobsCart ? <SavedJobs savedJobs={savedJobs} /> : null}
+        {showJobsCart ? (
+          <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
+        ) : null}
       </div>
     </div>
   );

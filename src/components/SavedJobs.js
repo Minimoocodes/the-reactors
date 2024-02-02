@@ -1,9 +1,13 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const SavedJobs = ({ savedJobs }) => {
-  // const handleRemove = (item) => {
-  //   console.log(item, "is not removed");
-  // };
+const SavedJobs = ({ savedJobs, setSavedJobs }) => {
+  const handleRemove = (item) => {
+    const updatedJobs = savedJobs.filter((jobs) => jobs !== item);
+    setSavedJobs(updatedJobs);
+    console.log(item, "is now removed");
+  };
   return (
     <div className="saved_jobs">
       <ul>
@@ -12,7 +16,13 @@ const SavedJobs = ({ savedJobs }) => {
         ) : (
           savedJobs.map((item) => (
             <li>
-              {item} <button>remove</button>
+              {item}{" "}
+              <button
+                className="removejobs_btn"
+                onClick={() => handleRemove(item)}
+              >
+                <FontAwesomeIcon icon={faXmark} />
+              </button>
             </li>
           ))
         )}
