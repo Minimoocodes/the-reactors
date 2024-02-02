@@ -14,7 +14,7 @@ const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     "Singapore",
     "Rio de Janeiro",
     "Taipei",
-    "Gran Canaria",
+    "Marrakesh",
   ];
   const images = {
     Dubai: `https://travelbird-images.imgix.net/f2/0b/f20bce73731062f021a0c62b7353fa76?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=1144&upscale=true&w=828`,
@@ -26,7 +26,7 @@ const WarmJobs = ({ jsonData, savedJobs, setSavedJobs }) => {
     Singapore: `https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Singapore/singapore-destination-guide-lead.jpg`,
     "Rio de Janeiro": `https://i.natgeofe.com/n/560b293d-80b2-4449-ad6c-036a249d46f8/rio-de-janeiro-travel_3x4.jpg`,
     Taipei: `https://media.timeout.com/images/105241423/750/422/image.jpg`,
-    "Gran Canaria": `https://blog.radissonblu.com/wp-content/uploads/2016/02/Puerto-Rico-beach-gran-canaria.jpg`,
+    Marrakesh: `https://i.pinimg.com/564x/35/83/15/3583159a069fb7b6da6494794ec9355b.jpg`,
   };
 
   // to convert the json data into array
