@@ -31,8 +31,8 @@ const CityCard = ({ city, images }) => {
         }}
       ></div>
       <div className="cityCard_content">
-        <h1>{city}</h1>
-        <h2>{Math.floor(weather?.main?.temp)} °C</h2>
+        <h2 style={{ color: "white" }}>{city}</h2>
+        <h2 style={{ color: "white" }}>{Math.floor(weather?.main?.temp)} °C</h2>
         <div className="weather_description">
           <img
             src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`}

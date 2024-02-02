@@ -41,9 +41,11 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
     <div>
       <ul className="joblist">
         {selectedJobs.map((jobTitle, index) => (
-          <Link key={jobTitle} to={`/apply/${jobTitle}/${city}`}>
+          <li key={jobTitle}>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <li>{jobTitle}</li>
+              <Link key={jobTitle} to={`/apply/${jobTitle}/${city}`}>
+                {jobTitle}
+              </Link>
               <button
                 className="save_btn"
                 onClick={() => handleJobSave(jobTitle, city)}
@@ -54,7 +56,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
                 />
               </button>
             </div>
-          </Link>
+          </li>
         ))}
       </ul>
     </div>
