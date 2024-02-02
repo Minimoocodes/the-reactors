@@ -10,9 +10,12 @@
 }
 
 body {
-  background-image: url(../Assets/Background\ Image@2x.svg);
+  /* background: rgb(2,0,36); */
+  background: linear-gradient(to bottom right, #0F0938 4.5%, #120838 22.1%, #1C083B 36.7%, #2D0741 50.2%, #460648 63.1%, #650451 75.6%, #8C035C 87.7%, #B9016A 99.3%, #BC016B 100%);
+  /* background-image: url(../Assets/Background\ Image@2x.svg); */
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
   font-family: "Inter";
 }
 

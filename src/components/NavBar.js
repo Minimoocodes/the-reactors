@@ -13,48 +13,50 @@ function NavBar({ savedJobs, setSavedJobs }) {
   };
 
   return (
-    <div
-      style={{
-        minHeight: 50,
-        paddingLeft: 10,
-        paddingRight: 20,
-        paddingTop: 10,
-        display: "flex",
-        fontSize: "1.3em",
-        color: "#FFD801",
-        gap: 2,
-        backgroundColor: "#D3D3D340",
-      }}
-    >
-      <Link to="/">
-        <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
-      </Link>
+    <div>
       <div
         style={{
-          marginLeft: "auto",
-          display: "flex",
+          minHeight: 50,
           paddingLeft: 10,
           paddingRight: 20,
           paddingTop: 10,
-          color: "#09D0D8",
+          display: "flex",
+          fontSize: "1.3em",
+          color: "#FFD801",
+          gap: 2,
+          backgroundColor: "#D3D3D340",
         }}
       >
-        <div className="nav-menu">
-          <Link to={"/"}>
-            <p>Home</p>
-          </Link>
-          <Link to={"/warmorcold"}>
-            <p>Find a job</p>
-          </Link>
-          <Link to={"/profiles"}>
-            <p>About us</p>
-          </Link>
-          <button className="savedjobs_btn" onClick={showSavedJobs}>
-            Saved jobs({savedJobs.length})
-          </button>
-          {showJobsCart ? (
-            <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
-          ) : null}
+        <Link to="/">
+          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
+        </Link>
+        <div
+          style={{
+            marginLeft: "auto",
+            display: "flex",
+            paddingLeft: 10,
+            paddingRight: 20,
+            paddingTop: 10,
+            color: "#09D0D8",
+          }}
+        >
+          <div className="nav-menu">
+            <Link to={"/"}>
+              <p>Home</p>
+            </Link>
+            <Link to={"/warmorcold"}>
+              <p>Find a job</p>
+            </Link>
+            <Link to={"/profiles"}>
+              <p>About us</p>
+            </Link>
+            <button className="savedjobs_btn" onClick={showSavedJobs}>
+              Saved jobs({savedJobs.length})
+            </button>
+            {showJobsCart ? (
+              <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
+            ) : null}
+          </div>
         </div>
       </div>
     </div>
