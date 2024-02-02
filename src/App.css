@@ -168,18 +168,26 @@
   background-position: 0;
 }
 
-
 .save_btn {
   background-color: transparent;
   border: none;
 }
+
 .savedjobs_btn {
   position: relative;
-  padding: 0.4rem;
   background-color: #09D0D8;
   color: white;
+
+}
+.savedjobs_btn, .removejobs_btn {
+  padding: 0.4rem;
   border: none;
   border-radius: 10px;
+}
+
+.removejobs_btn {
+  background-color: transparent;
+
 }
 
 .saved_jobs {
@@ -193,6 +201,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
+  z-index: 3;
 }
 
 .saved_jobs li {
