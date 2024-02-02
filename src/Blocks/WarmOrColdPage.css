@@ -4,10 +4,6 @@ a:link {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
 a:visited {
   text-decoration: none;
 }
@@ -29,6 +25,7 @@ a:visited {
   height: 20rem;
   padding: 1rem;
   border-radius: 1rem;
+  position: relative;
 }
 
 .WarmOrColdCard_content {
@@ -36,4 +33,34 @@ a:visited {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #09d0d8;
+    border-left: 5px solid #09d0d8;
+  }
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #09d0d8;
+    border-right: 5px solid #09d0d8;
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
