@@ -5,7 +5,7 @@ import SavedJobs from "./SavedJobs";
 import "../index.css";
 import { Link } from "react-router-dom";
 
-function NavBar({ savedJobs }) {
+function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
 
   const showSavedJobs = () => {
@@ -52,7 +52,9 @@ function NavBar({ savedJobs }) {
           <button className="savedjobs_btn" onClick={showSavedJobs}>
             Saved jobs({savedJobs.length})
           </button>
-          {showJobsCart ? <SavedJobs savedJobs={savedJobs} /> : null}
+          {showJobsCart ? (
+            <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
+          ) : null}
         </div>
       </div>
     </div>
