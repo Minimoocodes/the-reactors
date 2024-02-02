@@ -1,9 +1,10 @@
 .footer {
-  background-color: #D3D3D340;
+  background-color: #1f022b;
   width: 100%;
-  min-height: 3rem;
-  position: fixed;
+  height: 3rem;
   bottom: 0;
+  position: absolute;
+  margin-bottom: -4rem;
 }
 
 .footer_wrap {

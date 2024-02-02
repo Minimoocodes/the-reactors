@@ -12,6 +12,7 @@ export default function LandingPage({ navigate }) {
         width: "100vw",
         height: "100vh",
         zIndex: -10,
+        overflow: "hidden",
       }}
     >
       <div className="landing-page__wrapper">
