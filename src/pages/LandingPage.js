@@ -3,18 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function LandingPage({ navigate }) {
   return (
-    <div
-      style={{
-        backgroundImage: "url(/image/landingpage.png)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-        zIndex: -10,
-        overflow: "hidden",
-      }}
-    >
+    <div>
       <div className="landing-page__wrapper">
         <div className="title__wrapper">
           <img
