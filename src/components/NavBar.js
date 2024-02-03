@@ -12,6 +12,8 @@ function NavBar({ savedJobs, setSavedJobs }) {
     setShowJobsCart(!showJobsCart);
   };
 
+  const [activeLink, setActiveLink] = useState("");
+
   return (
     <div>
       <div
@@ -41,14 +43,32 @@ function NavBar({ savedJobs, setSavedJobs }) {
           }}
         >
           <div className="nav-menu">
-            <Link to={"/"}>
-              <p>Home</p>
+            <Link
+              to="/"
+              className={`nav-link ${
+                activeLink === "home" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("home")}
+            >
+              <p className="nav-text">Home</p>
             </Link>
-            <Link to={"/warmorcold"}>
-              <p>Find a job</p>
+            <Link
+              to="/warmorcold"
+              className={`nav-link ${
+                activeLink === "findJob" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("findJob")}
+            >
+              <p className="nav-text">Find a job</p>
             </Link>
-            <Link to={"/profiles"}>
-              <p>About us</p>
+            <Link
+              to="/profiles"
+              className={`nav-link ${
+                activeLink === "aboutUs" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("aboutUs")}
+            >
+              <p className="nav-text">About us</p>
             </Link>
             <button className="savedjobs_btn" onClick={showSavedJobs}>
               Saved jobs({savedJobs.length})

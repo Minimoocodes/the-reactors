@@ -1,7 +1,7 @@
 .footer {
   flex-wrap: wrap;
   position: relative;
-  height: 1.5rem;
+  height: 1rem;
   max-width: 100%;
   background-color: #2a2c2f;
   margin-left: auto;
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 1rem;
   max-width: 80rem;
   margin: 0 auto;

@@ -4,5 +4,63 @@
   min-width: 300px;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 1rem;
+  gap: 4rem;
+}
+.nav-link p {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.nav-link:hover p,
+.nav-link:visited p,
+.nav-link.active-link p {
+  transform: scale(1.5);
+  opacity: 0.2;
+  filter: blur(5px);
+  text-decoration: underline; /* Add underline on hover, visited, and active */
+}
+
+.nav-link p:hover,
+.nav-link p:visited,
+.nav-link.active-link p {
+  transform: scale(1.4);
+  opacity: 1;
+  filter: blur(0);
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff497c;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+.nav-link p:hover:before,
+.nav-link p:visited:before,
+.nav-link.active-link p:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.savedjobs_btn {
+  /* Add styles as needed for saved jobs */
+  color: #fff;
+  transition: 0.5s;
 }
