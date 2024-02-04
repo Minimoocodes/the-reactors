@@ -24,12 +24,7 @@ export default function LandingPage({ navigate }) {
           className="looking-for-job__wrapper"
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <img
-            src={tech}
-            alt="tech"
-            className="landing-page__tech"
-            style={{ width: 600 }}
-          />
+          <img src={tech} alt="tech" className="landing-page__tech" />
           <Link to="/warmorcold">
             <button className="button">Check our jobs here!</button>
           </Link>
