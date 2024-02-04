@@ -23,7 +23,11 @@ const Profile = ({
     <div className="hidden-profile-container">
       {isActive && (
         <div introduction_section>
-          <button onClick={closeProfile} style={{ float: "right" }}>
+          <button
+            className="close_btn"
+            onClick={closeProfile}
+            style={{ float: "right" }}
+          >
             X
           </button>
 
