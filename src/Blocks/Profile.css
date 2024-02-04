@@ -7,7 +7,7 @@
   height: 72vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   text-align: center;
   justify-content: space-between;
   margin: auto;
@@ -93,4 +93,8 @@ li {
 
 .intro_h2 {
   margin-bottom: 1rem;
+}
+
+p.description_p {
+  margin-top: 2rem;
 }

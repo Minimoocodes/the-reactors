@@ -20,10 +20,7 @@ const Profile = ({
   };
 
   return (
-    <div
-      className="hidden-profile-container"
-      style={{ marginTop: 30, marginLeft: 15 }}
-    >
+    <div className="hidden-profile-container">
       {isActive && (
         <div introduction_section>
           <button onClick={closeProfile} style={{ float: "right" }}>
@@ -46,7 +43,7 @@ const Profile = ({
 
                 <div>
                   <h2>{fullName}</h2>
-                  <p>{description}</p>
+                  <p className="description_p">{description}</p>
                 </div>
               </div>
             </div>
@@ -57,7 +54,7 @@ const Profile = ({
 
               <div className="project-section">
                 {project1 && (
-                  <div className="project1_img" style={{}}>
+                  <div className="project1_img">
                     <img
                       src={project1}
                       style={{ width: "100%" }}
