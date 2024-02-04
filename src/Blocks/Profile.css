@@ -1,25 +1,20 @@
-.introduction {
-  max-width: 30vh;
-}
-
 .profile-container {
   width: 150vh;
-  height: 72vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   text-align: center;
   justify-content: space-between;
   margin: auto;
-  padding: 25;
-  margin-top: 40px;
+  gap: 5rem;
+  margin-top: 60px;
 }
 
 .profile-image {
   width: 210px;
   height: auto;
   margin: auto;
-  gap: 40;
 }
 
 .hidden_introduction {
@@ -97,4 +92,33 @@ li {
 
 p.description_p {
   margin-top: 2rem;
+}
+
+/* animation */
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.profile-image {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: wiggle 1s infinite;
+    transform-origin: center;
+  }
 }

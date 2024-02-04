@@ -27,6 +27,7 @@ body {
 
   font-family: "Inter";
   min-height: 96vh;
+  max-height: 70vh;
 }
 
 @media screen and (max-width: 780px) {
