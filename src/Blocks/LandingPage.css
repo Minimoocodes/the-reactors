@@ -4,7 +4,8 @@
 }
 
 .landing-page__wrapper {
-  flex: 2; /* Takes up available space */
+  flex: 2;
+  min-height: 87vh;
 }
 
 .looking-for-job__wrapper {
@@ -19,5 +20,43 @@
 }
 
 .landing-page__tech {
-  width: 550px;
+  width: 500px;
+}
+
+.landing-page__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-page__logo {
+  width: 30rem;
+  padding: 5rem;
+}
+
+.landing-page__text {
+  padding: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.looking-for-job__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 0.4rem;
+  background-color: #09d1d871;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 5rem;
+  cursor: pointer;
 }

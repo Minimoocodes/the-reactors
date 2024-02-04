@@ -9,6 +9,7 @@
   margin: auto;
   gap: 5rem;
   margin-top: 60px;
+  min-height: 81vh;
 }
 
 .profile-image {

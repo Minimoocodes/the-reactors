@@ -1,6 +1,10 @@
-@import url(../src/Blocks/Page.css);
+@import url(../src/Blocks/Global.css);
 @import url(../src/Blocks/NavBar.css);
 @import url(../src/Blocks/WarmOrColdPage.css);
 @import url(../src/Blocks/Profile.css);
 @import url(../src/Blocks/Footer.css);
 @import url(../src/Blocks/LandingPage.css);
+@import url(../src/Blocks/ApplyPage.css);
+@import url(../src/Blocks/CityCards.css);
+@import url(../src/Blocks/JobList.css);
+@import url(../src/Blocks/SavedJobs.css);
