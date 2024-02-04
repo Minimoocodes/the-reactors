@@ -7,12 +7,11 @@
   height: 72vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   justify-content: space-between;
   margin: auto;
   padding: 25;
-
   margin-top: 40px;
 }
 
@@ -90,4 +89,8 @@ h2.profile_h2 {
 li {
   list-style-type: none;
   color: #ffffff;
+}
+
+.intro_h2 {
+  margin-bottom: 1rem;
 }

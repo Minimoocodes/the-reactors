@@ -103,7 +103,7 @@ const Profile = ({
             src={image}
             alt={`${name}'s profile`}
           />
-          <h2>{name}</h2>
+          <h2 className="intro_h2">{name}</h2>
           <p>{description}</p>
         </div>
       )}
