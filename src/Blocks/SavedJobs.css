@@ -24,13 +24,3 @@
   box-shadow: inset 330px 0 0 0 #09d0d8;
   color: white;
 }
-
-.savedjobs_btn:hover,
-.savedjobs_btn:visited,
-.savedjobs_btn.active-link {
-  transform: scale(1.4);
-  opacity: 1;
-  filter: blur(0);
-  text-decoration: none;
-  color: #fff;
-}

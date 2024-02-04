@@ -1,5 +1,5 @@
 .navbar_container {
-  height: 1rem;
+  height: 2rem;
 }
 
 .nav-menu {
@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .nav-text {
@@ -19,21 +19,20 @@
   font-family: "inter";
   color: #fff;
   transition: 0.5s;
-  margin-top: 0.4rem;
+  margin-top: 0.1rem;
 }
 
-/* Styles for hover, visited, and active links */
 .nav-text:hover,
 .nav-text:visited,
-.nav-text.active-link {
-  transform: scale(1.4); /* Reduced from 1.5 */
+.nav-text.active-link,
+.nav-text.active {
+  transform: scale(1.4);
   opacity: 1;
   filter: blur(0);
   text-decoration: none;
   color: #fff;
 }
 
-/* Styles for the pseudo-element ":before" */
 .nav-text:before {
   content: "";
   position: absolute;
@@ -50,20 +49,23 @@
 
 .nav-text:hover:before,
 .nav-text:visited:before,
-.nav-text.active-link:before {
+.nav-text.active-link:before,
+.nav-text.active:before {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
 }
 
-/* Additional style for paragraphs with class "nav-text" */
 p.nav-text {
   margin-top: 0;
 }
 
 .nav-text.saved-jobs:before {
-  height: 81%;
+  height: 76%;
   cursor: pointer;
+  margin-top: 1.8px;
+  margin-bottom: 1px;
+  padding: 0;
 }
 
 .nav-text.saved-jobs {

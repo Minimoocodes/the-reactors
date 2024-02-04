@@ -7,12 +7,11 @@ import { Link } from "react-router-dom";
 
 function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const showSavedJobs = () => {
     setShowJobsCart(!showJobsCart);
   };
-
-  const [activeLink, setActiveLink] = useState("");
 
   return (
     <div className="navbar_container">
@@ -50,7 +49,11 @@ function NavBar({ savedJobs, setSavedJobs }) {
               }`}
               onClick={() => setActiveLink("home")}
             >
-              <p className="nav-text">Home</p>
+              <p
+                className={`nav-text ${activeLink === "home" ? "active" : ""}`}
+              >
+                Home
+              </p>
             </Link>
             <Link
               to="/warmorcold"
@@ -59,7 +62,13 @@ function NavBar({ savedJobs, setSavedJobs }) {
               }`}
               onClick={() => setActiveLink("findJob")}
             >
-              <p className="nav-text">Find a job</p>
+              <p
+                className={`nav-text ${
+                  activeLink === "findJob" ? "active" : ""
+                }`}
+              >
+                Find a job
+              </p>
             </Link>
             <Link
               to="/profiles"
@@ -68,9 +77,18 @@ function NavBar({ savedJobs, setSavedJobs }) {
               }`}
               onClick={() => setActiveLink("aboutUs")}
             >
-              <p className="nav-text">About us</p>
+              <p
+                className={`nav-text ${
+                  activeLink === "aboutUs" ? "active" : ""
+                }`}
+              >
+                About us
+              </p>
             </Link>
-            <p className="nav-text saved-jobs" onClick={showSavedJobs}>
+            <p
+              className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
+              onClick={showSavedJobs}
+            >
               Saved jobs({savedJobs.length})
             </p>
             {showJobsCart ? (

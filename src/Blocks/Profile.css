@@ -1,6 +1,6 @@
 .profile-container {
   width: 150vh;
-  height: 70vh;
+  height: 68vh;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -9,7 +9,7 @@
   margin: auto;
   gap: 5rem;
   margin-top: 13rem;
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .profile-image {
