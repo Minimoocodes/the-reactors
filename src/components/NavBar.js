@@ -15,7 +15,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
   const [activeLink, setActiveLink] = useState("");
 
   return (
-    <div>
+    <div className="navbar_container">
       <div
         style={{
           minHeight: 50,
@@ -30,7 +30,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
         }}
       >
         <Link to="/">
-          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
+          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
         </Link>
         <div
           style={{
@@ -70,9 +70,9 @@ function NavBar({ savedJobs, setSavedJobs }) {
             >
               <p className="nav-text">About us</p>
             </Link>
-            <button className="savedjobs_btn" onClick={showSavedJobs}>
+            <p className="nav-text saved-jobs" onClick={showSavedJobs}>
               Saved jobs({savedJobs.length})
-            </button>
+            </p>
             {showJobsCart ? (
               <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
             ) : null}

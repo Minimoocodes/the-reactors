@@ -12,12 +12,12 @@ export default function LandingPage({ navigate }) {
             src={landinglogo}
             alt="thereactorslogo"
             className="landing-page__logo"
-          />
-          <div className="landing-page__text">
+          />{" "}
+          <p className="landing-page__text">
             Looking for a job and a new adventure? <br />
             Thriving under the sun or buried in snow? <br />
             We offer tech jobs in many locations worldwide!
-          </div>
+          </p>
         </div>
 
         <div
@@ -26,7 +26,7 @@ export default function LandingPage({ navigate }) {
         >
           <img src={tech} alt="tech" className="landing-page__tech" />
           <Link to="/warmorcold">
-            <button className="button">Check our jobs here!</button>
+            <button className="landingpage_button">Check our jobs here!</button>
           </Link>
         </div>
       </div>

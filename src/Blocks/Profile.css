@@ -8,8 +8,8 @@
   justify-content: space-between;
   margin: auto;
   gap: 5rem;
-  margin-top: 60px;
-  min-height: 81vh;
+  margin-top: 13rem;
+  min-height: 70vh;
 }
 
 .profile-image {
@@ -32,6 +32,7 @@
   border-radius: 25px;
   padding: 20px;
   height: 70vh;
+  margin-top: -10vh;
 }
 
 /* skilsl area*/

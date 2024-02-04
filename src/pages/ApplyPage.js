@@ -24,28 +24,50 @@ export default function ApplyPage({ jsonData }) {
   };
 
   return (
-    <div className="job_wrapper">
-      <p className="job_title">{jsonData[id].title}</p>
-      <p className="job_description">{jsonData[id].description}</p>
-      <form method="post" onSubmit={handleSubmit} className="apply_form">
-        <label>
-          First and last name: <input name="myInput" placeholder={"John Doe"} className="apply__input" />
-        </label>
-        <label>
-          E-mail: <input name="myInput" placeholder={"johndoe@gmail.com"} className="apply__input" />
-        </label>
-        <label>
-          Tell us about yourself:{" "}
-          <input name="myInput" placeholder={"Type here..."} className="apply-input__about" />
-        </label>
-        <button type="reset" className="apply__button">Reset Form</button>
-        <button type="submit" onClick={clickOnSubmit} className="apply__button">
-          Submit form
-        </button>
-        {message && (
-          <p className="apply_message">Thank you for your application!</p>
-        )}
-      </form>
+    <div className="apply_wrapper">
+      <div className="job_wrapper">
+        <p className="job_title">{jsonData[id].title}</p>
+        <p className="job_description">{jsonData[id].description}</p>
+        <form method="post" onSubmit={handleSubmit} className="apply_form">
+          <label>
+            First and last name:{" "}
+            <input
+              name="myInput"
+              placeholder={"John Doe"}
+              className="apply__input"
+            />
+          </label>
+          <label>
+            E-mail:{" "}
+            <input
+              name="myInput"
+              placeholder={"johndoe@gmail.com"}
+              className="apply__input"
+            />
+          </label>
+          <label>
+            Tell us about yourself:{" "}
+            <input
+              name="myInput"
+              placeholder={"Type here..."}
+              className="apply-input__about"
+            />
+          </label>
+          <button type="reset" className="apply__button">
+            Reset Form
+          </button>
+          <button
+            type="submit"
+            onClick={clickOnSubmit}
+            className="apply__button"
+          >
+            Submit form
+          </button>
+          {message && (
+            <p className="apply_message">Thank you for your application!</p>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

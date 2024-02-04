@@ -1,43 +1,40 @@
+.navbar_container {
+  height: 1rem;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: row;
-  min-width: 300px;
   justify-content: space-between;
   margin: 0 auto;
-  gap: 4rem;
+  gap: 2rem;
 }
-.nav-link p {
-  display: block;
+
+.nav-text {
+  display: inline-block;
   position: relative;
   text-decoration: none;
   padding: 5px;
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 23px;
+  font-family: "inter";
   color: #fff;
-  text-transform: uppercase;
   transition: 0.5s;
+  margin-top: 0.4rem;
 }
 
-.nav-link:hover p,
-.nav-link:visited p,
-.nav-link.active-link p {
-  transform: scale(1.5);
-  opacity: 0.2;
-  filter: blur(5px);
-  text-decoration: underline; /* Add underline on hover, visited, and active */
-}
-
-.nav-link p:hover,
-.nav-link p:visited,
-.nav-link.active-link p {
-  transform: scale(1.4);
+/* Styles for hover, visited, and active links */
+.nav-text:hover,
+.nav-text:visited,
+.nav-text.active-link {
+  transform: scale(1.4); /* Reduced from 1.5 */
   opacity: 1;
   filter: blur(0);
   text-decoration: none;
   color: #fff;
 }
 
-.nav-link p:before {
+/* Styles for the pseudo-element ":before" */
+.nav-text:before {
   content: "";
   position: absolute;
   top: 0;
@@ -51,16 +48,24 @@
   z-index: -1;
 }
 
-.nav-link p:hover:before,
-.nav-link p:visited:before,
-.nav-link.active-link p:before {
+.nav-text:hover:before,
+.nav-text:visited:before,
+.nav-text.active-link:before {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
 }
 
-.savedjobs_btn {
-  /* Add styles as needed for saved jobs */
-  color: #fff;
-  transition: 0.5s;
+/* Additional style for paragraphs with class "nav-text" */
+p.nav-text {
+  margin-top: 0;
+}
+
+.nav-text.saved-jobs:before {
+  height: 81%;
+  cursor: pointer;
+}
+
+.nav-text.saved-jobs {
+  cursor: pointer;
 }

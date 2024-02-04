@@ -5,7 +5,8 @@
   align-items: center;
   max-width: 75%;
   margin: 1rem auto;
-  min-height: 84vh;
+  min-height: 85vh;
+  margin-top: 3rem;
 }
 
 .job_title {
@@ -53,7 +54,7 @@
   color: black;
   background-color: #09d0d8;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
   padding: 0.3rem;
   padding: 0.5rem;
