@@ -12,6 +12,7 @@
 body {
   display: flex;
   height: auto;
+  width: auto;
   background: linear-gradient(
     to bottom right,
     #0f0938 4.5%,

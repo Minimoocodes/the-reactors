@@ -23,7 +23,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
           paddingTop: 10,
           display: "flex",
           fontSize: "1.3em",
-          color: "#FFD801",
+
           gap: 2,
           backgroundColor: "#D3D3D340",
         }}

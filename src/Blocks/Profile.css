@@ -39,7 +39,7 @@
   border-radius: 25px;
   height: auto;
   width: auto;
-  overflow: hidden;
+  background-color: #ccc;
 }
 
 /* skilsl area*/
@@ -74,10 +74,9 @@ ul.skills {
 .project-section {
   margin-top: 3rem;
   display: flex;
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-between;
   gap: 10px;
-  min-width: 90vh;
-  margin-right: 5rem;
+  max-width: 90vh;
   gap: 1rem;
 }
 
@@ -181,7 +180,7 @@ p.description_p {
   }
 
   .hidden_introduction {
-    max-width: 80%;
+    max-width: 50%;
   }
 
   .hidden-profile {
@@ -204,6 +203,25 @@ p.description_p {
   .profile-image {
     width: 150px;
   }
+
+  /* here */
+  .hidden-profile {
+    height: auto;
+    min-width: 650px;
+    max-width: 500px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+
+  .project-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 90vh;
+    gap: 1rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -214,7 +232,7 @@ p.description_p {
   }
 
   .hidden_introduction {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .hidden-profile {
@@ -224,5 +242,33 @@ p.description_p {
 
   .project-section {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .profile-container {
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+  }
+
+  /* here */
+  .hidden-profile {
+    height: auto;
+    max-width: 500px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+
+  .project-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 90vh;
+    gap: 1rem;
   }
 }
