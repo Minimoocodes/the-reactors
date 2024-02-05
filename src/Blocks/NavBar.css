@@ -1,16 +1,15 @@
-.navbar_container {
+/* .navbar_container {
   height: 2rem;
-  margin-bottom: 3rem;
-}
+} */
 
-.nav-menu {
+/* .nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   gap: 3rem;
-}
-
+} */
+/* 
 .nav-text {
   display: inline-block;
   position: relative;
@@ -21,7 +20,7 @@
   color: #fff;
   transition: 0.5s;
   margin-top: 0.1rem;
-}
+} */
 
 .nav-text:hover,
 .nav-text:visited,
@@ -57,9 +56,9 @@
   transform: scaleX(1);
 }
 
-p.nav-text {
+/* p.nav-text {
   margin-top: 0;
-}
+} */
 
 .nav-text.saved-jobs:before {
   height: 76%;

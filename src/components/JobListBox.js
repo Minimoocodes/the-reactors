@@ -52,7 +52,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
               >
                 <FontAwesomeIcon
                   icon={faBookmark}
-                  style={{ color: "ffffff" }}
+                  style={{ color: "ffffff", cursor: "pointer" }}
                 />
               </button>
             </div>

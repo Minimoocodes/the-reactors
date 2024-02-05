@@ -1,0 +1,95 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Logo from "../Assets/NavLogo copy.png";
+import { useState } from "react";
+import SavedJobs from "./SavedJobs";
+import "../index.css";
+import { Link } from "react-router-dom";
+
+function NavbarRP({ savedJobs, setSavedJobs }) {
+  const [showJobsCart, setShowJobsCart] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
+
+  const showSavedJobs = () => {
+    setShowJobsCart(!showJobsCart);
+  };
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Link to="/">
+          <Navbar.Brand href="#home">
+            {" "}
+            <img
+              src={Logo}
+              alt="NavLogo"
+              style={{ height: 50, marginTop: 5 }}
+            />
+          </Navbar.Brand>
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Link
+              to="/"
+              className={`nav-link ${
+                activeLink === "home" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("home")}
+            >
+              <Nav.Link href="#home">Home</Nav.Link>
+            </Link>
+            <Link
+              to="/warmorcold"
+              className={`nav-link ${
+                activeLink === "findJob" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("findJob")}
+            >
+              <Nav.Link
+                href="#link"
+                className={`nav-text ${
+                  activeLink === "findJob" ? "active" : ""
+                }`}
+                style={{ marginRight: "2rem" }}
+              >
+                Find a job
+              </Nav.Link>
+            </Link>
+            <Link
+              to="/profiles"
+              className={`nav-link ${
+                activeLink === "aboutUs" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("aboutUs")}
+            >
+              <Nav.Link
+                href="#link"
+                className={`nav-text ${
+                  activeLink === "aboutUs" ? "active" : ""
+                }`}
+                style={{ marginRight: "2rem" }}
+              >
+                About us
+              </Nav.Link>
+            </Link>
+            <Nav.Link
+              href="#link"
+              className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
+              onClick={showSavedJobs}
+              style={{ marginRight: "2rem" }}
+            >
+              Saved Jobs
+            </Nav.Link>
+            {showJobsCart ? (
+              <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
+            ) : null}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NavbarRP;
