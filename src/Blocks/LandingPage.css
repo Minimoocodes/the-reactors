@@ -1,0 +1,67 @@
+.landing-page__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-page__wrapper {
+  flex: 2;
+  min-height: 90vh;
+}
+
+.looking-for-job__wrapper {
+  flex: 2;
+}
+
+.tech-wrapper {
+  flex: 1;
+}
+
+.button_looing_for_jobs {
+}
+
+.landing-page__tech {
+  width: 500px;
+}
+
+.landing-page__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: baseline;
+  margin-top: -13rem;
+}
+
+.landing-page__logo {
+  width: 30rem;
+  padding: 3rem;
+  margin-left: -1rem;
+}
+
+.landing-page__text {
+  margin-left: 3.5rem;
+  margin-top: -4rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.looking-for-job__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingpage_button {
+  padding: 0.4rem;
+  background-color: #09d1d871;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}

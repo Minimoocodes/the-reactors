@@ -1,0 +1,57 @@
+/* Job list Box */
+.joblist_wrap {
+  width: 15rem;
+  height: 20rem;
+  padding: 1rem;
+  box-shadow: 1px 0 1px white;
+}
+
+.joblist {
+  list-style: none;
+}
+
+.joblist li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.joblist li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.joblist li:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.save_btn {
+  background-color: transparent;
+  border: none;
+}
+
+.savedjobs_btn {
+  position: relative;
+  background-color: #09d0d8;
+  color: white;
+}
+
+.savedjobs_btn,
+.removejobs_btn {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.removejobs_btn {
+  background-color: transparent;
+}
