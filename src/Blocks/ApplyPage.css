@@ -64,3 +64,61 @@
 .apply_message {
   font-size: 1.5rem;
 }
+
+
+@media only screen and (max-width: 640px) {
+  .job_title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .job_description {
+    font-size: 1rem;
+  }
+  .apply_form {
+    font-size: 1rem;
+  }
+  .apply__input {
+    font-size: 1rem;
+  }
+  .apply__button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .job_title {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .job_description {
+    font-size: 1rem;
+  }
+  .apply_form {
+    font-size: 1rem;
+  }
+  .apply__input {
+    font-size: 1rem;
+  }
+  .apply__button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .job_title {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .job_description {
+    font-size: 1.5rem;
+  }
+  .apply_form {
+    font-size: 1.5rem;
+  }
+  .apply__input {
+    font-size: 1.5rem;
+  }
+  .apply__button {
+    font-size: 1.5rem;
+  }
+}
