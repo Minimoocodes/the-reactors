@@ -9,9 +9,10 @@
   src: url("/public/font/Inter-Regular.ttf") format("truetype");
 }
 
+html,
 body {
   display: flex;
-  height: auto;
+  min-height: 100vh;
   width: auto;
   background: linear-gradient(
     to bottom right,
