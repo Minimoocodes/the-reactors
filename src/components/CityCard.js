@@ -38,19 +38,19 @@ const CityCard = ({ city, images }) => {
             src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`}
             alt="weatherIcon"
           />
-          <h3>{weather?.weather?.[0].description}</h3>
+          <h4>{weather?.weather?.[0].description}</h4>
         </div>
         <div className="weather_humidity">
           <div style={{ textAlign: "center" }}>
-            <h4>Humidity</h4>
-            <h4>
+            <h5>Humidity</h5>
+            <h5>
               {weather?.main?.humidity}
               <FontAwesomeIcon icon={faDroplet} style={{ color: "#74C0FC" }} />
-            </h4>
+            </h5>
           </div>
           <div style={{ textAlign: "center" }}>
-            <h4>Feels like </h4>
-            <h4>{Math.floor(weather?.main?.feels_like)} °C</h4>
+            <h5>Feels like </h5>
+            <h5>{Math.floor(weather?.main?.feels_like)} °C</h5>
           </div>
         </div>
       </div>

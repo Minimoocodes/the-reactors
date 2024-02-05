@@ -1,3 +1,15 @@
+/* warm and cold jos page */
+.cities_wrap {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 84rem;
+  justify-content: center;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+
 /* City Card */
 .div_wrap {
   position: relative;
@@ -67,12 +79,4 @@
   color: white;
 }
 
-/* warm and cold jos page */
-.cities_wrap {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  max-width: 84rem;
-  justify-content: center;
-  margin: 4rem auto;
-}
+
