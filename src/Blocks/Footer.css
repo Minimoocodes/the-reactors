@@ -10,6 +10,7 @@
   color: white;
   overflow: hidden;
   padding-bottom: 60px;
+  z-index: 3;
 }
 
 .footer_wrap {
