@@ -1,53 +1,61 @@
 .profile-container {
-  width: 150vh;
-  height: 68vh;
+  display: "flex";
+  flex-wrap: "wrap";
+  margin-left: 150;
+  margin-right: 50;
+  gap: 20;
+  margin-top: 50;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  text-align: center;
-  justify-content: space-between;
-  margin: auto;
-  gap: 5rem;
-  margin-top: 13rem;
-  min-height: 65vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 4rem;
 }
 
 .profile-image {
-  width: 210px;
   height: auto;
   margin: auto;
+  display: flex;
 }
 
 .hidden_introduction {
   margin: auto;
-  max-width: 50vh;
+  min-width: 50vh;
   text-align: center;
   margin-right: 20;
   flex: 1;
   padding: 5rem;
 }
 
+.hidden-profile-container {
+  padding: 1rem;
+  text-align: center;
+}
+
 .hidden-profile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid #d9d9d9;
   border-radius: 25px;
-  padding: 20px;
-  height: 70vh;
-  margin-top: -10vh;
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
 /* skilsl area*/
 
 .skills_container {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .skills {
-  margin-top: 6rem;
+  margin-top: 3rem;
   text-align: left;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin-bottom: 2rem;
 }
 
 .skills li {
@@ -59,6 +67,7 @@
 
 ul.skills {
   margin-top: 2rem;
+  font-size: 1rem;
 }
 
 /* project area */
@@ -67,6 +76,9 @@ ul.skills {
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
   gap: 10px;
+  min-width: 90vh;
+  margin-right: 5rem;
+  gap: 1rem;
 }
 
 /*font are*/
@@ -86,14 +98,17 @@ h2.profile_h2 {
 li {
   list-style-type: none;
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 .intro_h2 {
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 p.description_p {
   margin-top: 2rem;
+  font-size: 1.3rem;
 }
 
 /* animation */
@@ -156,4 +171,58 @@ p.description_p {
 .button-1:hover,
 .button-1:focus {
   background-color: #f082ac;
+}
+
+@media only screen and (max-width: 1200px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hidden_introduction {
+    max-width: 80%;
+  }
+
+  .hidden-profile {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .project-section {
+    flex-direction: column;
+  }
+}
+
+/* media quarry area */
+
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hidden_introduction {
+    max-width: 80%;
+  }
+
+  .hidden-profile {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .project-section {
+    flex-direction: column;
+  }
 }

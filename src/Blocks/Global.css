@@ -10,7 +10,8 @@
 }
 
 body {
-  /* background: rgb(2,0,36); */
+  display: flex;
+  height: auto;
   background: linear-gradient(
     to bottom right,
     #0f0938 4.5%,
@@ -23,24 +24,7 @@ body {
     #b9016a 99.3%,
     #bc016b 100%
   );
-  /* background-image: url(../Assets/Background\ Image@2x.svg); */
-
   font-family: "Inter";
-  min-height: 96vh;
-  max-height: 163vh;
-  min-height: 70vh;
-}
-
-@media screen and (max-width: 780px) {
-  .page {
-    padding: 0 20px 30px 20px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .page {
-    padding: 0 20px 30px 20px;
-  }
 }
 
 p {
