@@ -15,11 +15,12 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
     setShowJobsCart(!showJobsCart);
   };
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary bg-transparent">
       <Link to="/">
         <Navbar.Brand href="#home">
           {" "}
           <img
+            className="nav_logo"
             src={Logo}
             alt="NavLogo"
             style={{ height: 50, marginTop: 5, marginLeft: "2rem" }}
@@ -30,45 +31,42 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link
+            {/* <Link
               to="/"
               className={`nav-link ${
                 activeLink === "home" ? "active-link" : ""
               }`}
               onClick={() => setActiveLink("home")}
             >
-              <Nav.Link href="#home">Home</Nav.Link>
-            </Link>
+              <Nav.Link href="#home" className="nav-text">
+                Home
+              </Nav.Link>
+            </Link> */}
             <Link
               to="/warmorcold"
-              className={`nav-link ${
-                activeLink === "findJob" ? "active-link" : ""
-              }`}
+              className={` ${activeLink === "findJob" ? "active-link" : ""}`}
               onClick={() => setActiveLink("findJob")}
             >
               <Nav.Link
                 href="#link"
-                className={`nav-text ${
-                  activeLink === "findJob" ? "active" : ""
-                }`}
+                className={`nav-text
+                ${activeLink === "findJob" ? "active" : ""}`}
               >
-                Find a job
+                FIND A JOB
               </Nav.Link>
             </Link>
             <Link
               to="/profiles"
-              className={`nav-link ${
-                activeLink === "aboutUs" ? "active-link" : ""
-              }`}
+              className={`
+                 ${activeLink === "aboutUs" ? "active-link" : ""}`}
               onClick={() => setActiveLink("aboutUs")}
             >
               <Nav.Link
                 href="#link"
-                className={`nav-text ${
-                  activeLink === "aboutUs" ? "active" : ""
-                }`}
+                className={`nav-text
+                ${activeLink === "aboutUs" ? "active" : ""}`}
               >
-                About us
+                ABOUT US
               </Nav.Link>
             </Link>
             <Nav.Link
@@ -76,7 +74,7 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
               className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
               onClick={showSavedJobs}
             >
-              Saved Jobs{`(${savedJobs.length})`}
+              SAVED JOBS{`(${savedJobs.length})`}
             </Nav.Link>
             {showJobsCart ? (
               <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
