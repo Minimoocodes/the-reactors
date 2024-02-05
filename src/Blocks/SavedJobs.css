@@ -1,8 +1,12 @@
 /* <SavedJobs /> */
+.bg-body-tertiary {
+  position: relative;
+}
+
 .saved_jobs {
   position: absolute;
   top: 70px;
-  right: 37px;
+  right: 1rem;
   text-align: end;
   background-color: white;
   opacity: 0.9;

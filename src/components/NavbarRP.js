@@ -17,17 +17,13 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
   };
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Link to="/">
-          <Navbar.Brand href="#home">
-            {" "}
-            <img
-              src={Logo}
-              alt="NavLogo"
-              style={{ height: 50, marginTop: 5 }}
-            />
-          </Navbar.Brand>
-        </Link>
+      <Link to="/">
+        <Navbar.Brand href="#home">
+          {" "}
+          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
+        </Navbar.Brand>
+      </Link>
+      <Container className="navbar_wrap">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
