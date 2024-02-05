@@ -64,7 +64,7 @@
 }
 
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .landing-page__wrapper {
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 990px) {
   .landing-page__wrapper {
     display: flex;
     flex-direction: column;
