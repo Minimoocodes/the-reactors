@@ -5,7 +5,7 @@
   margin-right: 50;
   gap: 20;
   margin-top: 50;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 4rem;
 }
@@ -194,6 +194,8 @@ p.description_p {
   }
 }
 
+/* media quarry area */
+
 @media only screen and (max-width: 768px) {
   .profile-container {
     gap: 1rem;
@@ -201,5 +203,26 @@ p.description_p {
 
   .profile-image {
     width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hidden_introduction {
+    max-width: 80%;
+  }
+
+  .hidden-profile {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .project-section {
+    flex-direction: column;
   }
 }
