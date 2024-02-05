@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo from "../Assets/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
@@ -20,10 +19,14 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
       <Link to="/">
         <Navbar.Brand href="#home">
           {" "}
-          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
+          <img
+            src={Logo}
+            alt="NavLogo"
+            style={{ height: 50, marginTop: 5, marginLeft: "2rem" }}
+          />
         </Navbar.Brand>
       </Link>
-      <Container className="navbar_wrap">
+      <Container className="container_wrap">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -48,7 +51,6 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
                 className={`nav-text ${
                   activeLink === "findJob" ? "active" : ""
                 }`}
-                style={{ marginRight: "2rem" }}
               >
                 Find a job
               </Nav.Link>
@@ -65,7 +67,6 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
                 className={`nav-text ${
                   activeLink === "aboutUs" ? "active" : ""
                 }`}
-                style={{ marginRight: "2rem" }}
               >
                 About us
               </Nav.Link>
@@ -74,9 +75,8 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
               href="#link"
               className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
               onClick={showSavedJobs}
-              style={{ marginRight: "2rem" }}
             >
-              Saved Jobs
+              Saved Jobs{`(${savedJobs.length})`}
             </Nav.Link>
             {showJobsCart ? (
               <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />

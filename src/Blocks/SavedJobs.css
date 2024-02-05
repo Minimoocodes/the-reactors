@@ -5,8 +5,8 @@
 
 .saved_jobs {
   position: absolute;
-  top: 70px;
-  right: 1rem;
+  top: 4rem;
+  right: 0;
   text-align: end;
   background-color: white;
   opacity: 0.9;
