@@ -4,10 +4,11 @@
   margin-left: 150;
   margin-right: 50;
   gap: 20;
-  margin-top: 50;
+  margin-top: 4rem;
   display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 4rem;
+  width: 100vw;
 }
 
 .profile-image {
@@ -112,6 +113,7 @@ li {
 .intro_h2 {
   margin-bottom: 1rem;
   margin-top: 1rem;
+  color: #03edee;
 }
 
 p.description_p {

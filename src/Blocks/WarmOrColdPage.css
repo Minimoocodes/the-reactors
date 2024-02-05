@@ -10,6 +10,7 @@ a:visited {
 
 .WarmOrCOldPage {
   min-height: 81.2vh;
+  min-width: 100vw;
 }
 
 .WarmOrCold_container {
@@ -81,8 +82,10 @@ a:visited {
 /*font*/
 .findajob_h1 {
   margin-top: 0;
+  color: #03edee;
 }
 
 .findajob_h2 {
   margin-top: 2rem;
+  color: #c90090;
 }
