@@ -5,7 +5,8 @@
 
 .landing-page__wrapper {
   flex: 2;
-  min-height: 90vh;
+  min-height: 80vh;
+  max-height: 90vh;
 }
 
 .looking-for-job__wrapper {

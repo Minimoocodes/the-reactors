@@ -23,14 +23,6 @@ const Profile = ({
     <div className="hidden-profile-container">
       {isActive && (
         <div introduction_section>
-          <button
-            className="close_btn"
-            onClick={closeProfile}
-            style={{ float: "right" }}
-          >
-            X
-          </button>
-
           <div className="hidden-profile" style={{ display: "flex" }}>
             <div className="hidden_introduction">
               <div
@@ -87,6 +79,13 @@ const Profile = ({
                 </ul>
               </div>
             </div>
+            <button
+              className="close_btn"
+              onClick={closeProfile}
+              style={{ float: "right" }}
+            >
+              X
+            </button>
           </div>
         </div>
       )}
