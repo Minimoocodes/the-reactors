@@ -1,22 +1,28 @@
 .footer {
-  background-color: #D3D3D340;
-  width: 100%;
-  min-height: 3rem;
-  position: fixed;
-  bottom: 0;
+  flex-wrap: wrap;
+  position: relative;
+  height: 1rem;
+  max-width: 100%;
+  background-color: #2a2c2f;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  overflow: hidden;
+
+  padding-bottom: 60px;
 }
 
 .footer_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3rem;
-    padding: 1rem;
-    max-width: 80rem;
-    margin: 0 auto;
-  }
-  
-  .footer > p {
-    margin: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.footer > p {
+  margin: 0;
+}

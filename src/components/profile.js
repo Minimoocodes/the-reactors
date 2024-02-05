@@ -1,3 +1,5 @@
+import React from "react";
+
 const Profile = ({
   name,
   image,
@@ -7,6 +9,7 @@ const Profile = ({
   project2,
   isActive,
   onToggleProfile,
+  fullName,
 }) => {
   const toggleHidden = () => {
     onToggleProfile(name);
@@ -17,19 +20,19 @@ const Profile = ({
   };
 
   return (
-    <div
-      className="hidden-profile-container"
-      style={{ marginTop: 30, marginLeft: 15 }}
-    >
+    <div className="hidden-profile-container">
       {isActive && (
-        <div>
-          <button onClick={closeProfile} style={{ float: "right" }}>
+        <div introduction_section>
+          <button
+            className="close_btn"
+            onClick={closeProfile}
+            style={{ float: "right" }}
+          >
             X
           </button>
 
           <div className="hidden-profile" style={{ display: "flex" }}>
-            {/* profile buttons intro when clicked */}
-            <div style={{ marginRight: 20, flex: 1 }}>
+            <div className="hidden_introduction">
               <div
                 className="introduction"
                 onClick={toggleHidden}
@@ -41,31 +44,24 @@ const Profile = ({
                   src={image}
                   alt={`${name}'s profile`}
                 />
-                <h2>{name}</h2>
-                <p>{description}</p>
-              </div>
 
-              {/* skills area  */}
-              <div className="skills-section">
-                <h2>Skills:</h2>
-
-                <ul className="skills">
-                  {skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
+                <div>
+                  <h2>{fullName}</h2>
+                  <p className="description_p">{description}</p>
+                </div>
               </div>
             </div>
 
-            <div style={{ flex: 1 }}>
-              {/* projcts */}
+            {/* projects */}
+            <div className="projectskills_container" style={{ flex: 1 }}>
+              <h1 className="profiles_h1">Recent Projects</h1>
+
               <div className="project-section">
                 {project1 && (
-                  <div style={{ marginBottom: 10 }}>
-                    <h2>Recent Projects</h2>
+                  <div className="project1_img">
                     <img
                       src={project1}
-                      style={{ width: "70%" }}
+                      style={{ width: "100%" }}
                       alt="Project 1"
                     />
                   </div>
@@ -73,18 +69,29 @@ const Profile = ({
                 {project2 && (
                   <div>
                     <img
+                      className="project2_img"
+                      style={{ width: "100%" }}
                       src={project2}
-                      style={{ width: "70%" }}
                       alt="Project 2"
                     />
                   </div>
                 )}
               </div>
+              {/* skills area */}
+              <div className="skills_container">
+                <h1 className="profiles_h1">Skills:</h1>
+                <ul className="skills">
+                  {skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       )}
-      {/* profile container div*/}
+
+      {/* profile container div */}
       {!isActive && (
         <div
           className="introduction"
@@ -97,7 +104,7 @@ const Profile = ({
             src={image}
             alt={`${name}'s profile`}
           />
-          <h2>{name}</h2>
+          <h2 className="intro_h2">{name}</h2>
           <p>{description}</p>
         </div>
       )}

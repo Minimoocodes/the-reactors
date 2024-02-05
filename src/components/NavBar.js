@@ -7,13 +7,14 @@ import { Link } from "react-router-dom";
 
 function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const showSavedJobs = () => {
     setShowJobsCart(!showJobsCart);
   };
 
   return (
-    <div>
+    <div className="navbar_container">
       <div
         style={{
           minHeight: 50,
@@ -28,7 +29,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
         }}
       >
         <Link to="/">
-          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: -5 }} />
+          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
         </Link>
         <div
           style={{
@@ -41,18 +42,55 @@ function NavBar({ savedJobs, setSavedJobs }) {
           }}
         >
           <div className="nav-menu">
-            <Link to={"/"}>
-              <p>Home</p>
+            <Link
+              to="/"
+              className={`nav-link ${
+                activeLink === "home" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("home")}
+            >
+              <p
+                className={`nav-text ${activeLink === "home" ? "active" : ""}`}
+              >
+                Home
+              </p>
             </Link>
-            <Link to={"/warmorcold"}>
-              <p>Find a job</p>
+            <Link
+              to="/warmorcold"
+              className={`nav-link ${
+                activeLink === "findJob" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("findJob")}
+            >
+              <p
+                className={`nav-text ${
+                  activeLink === "findJob" ? "active" : ""
+                }`}
+              >
+                Find a job
+              </p>
             </Link>
-            <Link to={"/profiles"}>
-              <p>About us</p>
+            <Link
+              to="/profiles"
+              className={`nav-link ${
+                activeLink === "aboutUs" ? "active-link" : ""
+              }`}
+              onClick={() => setActiveLink("aboutUs")}
+            >
+              <p
+                className={`nav-text ${
+                  activeLink === "aboutUs" ? "active" : ""
+                }`}
+              >
+                About us
+              </p>
             </Link>
-            <button className="savedjobs_btn" onClick={showSavedJobs}>
+            <p
+              className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
+              onClick={showSavedJobs}
+            >
               Saved jobs({savedJobs.length})
-            </button>
+            </p>
             {showJobsCart ? (
               <SavedJobs savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
             ) : null}
