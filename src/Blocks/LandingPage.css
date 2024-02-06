@@ -1,13 +1,14 @@
 .landing-page__container {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 
 .landing-page__wrapper {
   flex: 2;
-  min-height: 80vh;
-  max-height: 90vh;
-  width: 100vw;
+  min-height: 87vh;
+  max-width: 97rem;
+  margin: auto;
 }
 
 .looking-for-job__wrapper {
@@ -65,7 +66,6 @@
   cursor: pointer;
   margin-top: 3rem;
 }
-
 
 @media screen and (max-width: 640px) {
   .landing-page__wrapper {

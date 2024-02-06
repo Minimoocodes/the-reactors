@@ -11,8 +11,7 @@
 
 body {
   display: flex;
-  min-height: 100vh;
-  width: auto;
+  height: auto;
   background: linear-gradient(
     to bottom right,
     #0f0938 4.5%,
@@ -26,6 +25,8 @@ body {
     #bc016b 100%
   );
   font-family: "Inter";
+  width: 100vw;
+  background-size: cover;
 }
 
 p {

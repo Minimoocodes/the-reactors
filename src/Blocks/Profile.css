@@ -9,6 +9,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 4rem;
   width: 100vw;
+  min-height: 83vh;
 }
 
 .profile-image {
@@ -102,12 +103,6 @@ h2.profile_h2 {
   text-align: left;
   margin-top: 10px;
   margin-left: 0rem;
-}
-
-li {
-  list-style-type: none;
-  color: #ffffff;
-  font-size: 1.5rem;
 }
 
 .intro_h2 {
