@@ -18,8 +18,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
       <div
         style={{
           minHeight: 50,
-          paddingLeft: 10,
-          paddingRight: 20,
+          paddingInline: "5rem",
           paddingTop: 10,
           display: "flex",
           fontSize: "1.3em",
@@ -44,8 +43,9 @@ function NavBar({ savedJobs, setSavedJobs }) {
           <div className="nav-menu">
             <Link
               to="/"
-              className={`nav-link ${activeLink === "home" ? "active-link" : ""
-                }`}
+              className={`nav-link ${
+                activeLink === "home" ? "active-link" : ""
+              }`}
               onClick={() => setActiveLink("home")}
             >
               <p
@@ -56,26 +56,30 @@ function NavBar({ savedJobs, setSavedJobs }) {
             </Link>
             <Link
               to="/warmorcold"
-              className={`nav-link ${activeLink === "findJob" ? "active-link" : ""
-                }`}
+              className={`nav-link ${
+                activeLink === "findJob" ? "active-link" : ""
+              }`}
               onClick={() => setActiveLink("findJob")}
             >
               <p
-                className={`nav-text ${activeLink === "findJob" ? "active" : ""
-                  }`}
+                className={`nav-text ${
+                  activeLink === "findJob" ? "active" : ""
+                }`}
               >
                 Find a job
               </p>
             </Link>
             <Link
               to="/profiles"
-              className={`nav-link ${activeLink === "aboutUs" ? "active-link" : ""
-                }`}
+              className={`nav-link ${
+                activeLink === "aboutUs" ? "active-link" : ""
+              }`}
               onClick={() => setActiveLink("aboutUs")}
             >
               <p
-                className={`nav-text ${activeLink === "aboutUs" ? "active" : ""
-                  }`}
+                className={`nav-text ${
+                  activeLink === "aboutUs" ? "active" : ""
+                }`}
               >
                 About us
               </p>

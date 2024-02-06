@@ -1,4 +1,10 @@
+.navbar_container {
+  width: 100vw;
+}
 
+.nav-menu {
+  display: flex;
+}
 
 .nav-text {
   display: inline-block;
@@ -7,27 +13,18 @@
   padding: 5px;
   font-size: 23px;
   font-family: "inter";
-  /* color: #fff; */
+  color: #fff;
   transition: 0.5s;
   margin-top: 0.1rem;
   margin-inline: 1.3rem;
-  /* color: #2e1b96; */
 } 
 
-.bg-body-tertiary {
-  width: 100vw;
-}
-
-.nav_logo {
-  opacity: 1;
-}
-
-.me-auto {
+/* .me-auto {
   display: flex;
   align-items: center;
   position: absolute;
   right: 10rem;
-}
+} */
 
 .nav-text:hover,
 .nav-text:visited
@@ -38,7 +35,7 @@
   opacity: 1;
   filter: blur(0);
   text-decoration: none;
-  color: #2e1b96;
+  color: white;
 } 
 
 .nav-text:before {
