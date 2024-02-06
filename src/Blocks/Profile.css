@@ -316,9 +316,10 @@ p.description_p {
 
   .profile-container {
     gap: 1rem;
-    max-width: 10vh;
+    max-width: 60vh;
     height: auto;
     margin: auto;
+    width: 100vw;
   }
 
   .profile-image {
