@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../Assets/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
 import "../index.css";
@@ -17,7 +16,11 @@ function NavBar({ savedJobs, setSavedJobs }) {
     <div className="navbar_container">
       <div className="sub_container">
         <Link to="/">
-          <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
+          <img
+            src="/thereactors/NavLogo copy.png"
+            alt="NavLogo"
+            style={{ height: 50, marginTop: 5 }}
+          />
         </Link>
         <div
           style={{

@@ -1,7 +1,5 @@
 import React from "react";
-import landinglogo from "../Assets/reactorslandinglogo_transp.png";
 import { Link } from "react-router-dom";
-import tech from "../Assets/tech.png";
 
 export default function LandingPage() {
   return (
@@ -9,7 +7,7 @@ export default function LandingPage() {
       <div className="landing-page__wrapper">
         <div className="title__wrapper">
           <img
-            src={landinglogo}
+            src="/thereactors/reactorslandinglogo_transp.png"
             alt="thereactorslogo"
             className="landing-page__logo"
           />{" "}
@@ -24,7 +22,11 @@ export default function LandingPage() {
           className="looking-for-job__wrapper"
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <img src={tech} alt="tech" className="landing-page__tech" />
+          <img
+            src="/thereactors/tech.png"
+            alt="tech"
+            className="landing-page__tech"
+          />
           <Link to="/warmorcold">
             <button className="landingpage_button">Check our jobs here!</button>
           </Link>

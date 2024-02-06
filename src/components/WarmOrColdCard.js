@@ -26,8 +26,8 @@ const coldCities = [
 const WarmOrColdCard = ({ warmOrColdDisplay }) => {
   //warmorcoldimages, an object with warm and cold inside that is links to different images to be used as backgrounds
   const warmorcoldimages = {
-    warm: "../Assets/warm_weather.png",
-    cold: "../Assets/cold_weather.png",
+    warm: "/thereactors/warm_weather.png",
+    cold: "/thereactors/cold_weather.png",
   };
 
   //isWarm is true when warmOrColdDisplay equals "warm"

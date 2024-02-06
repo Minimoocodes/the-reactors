@@ -1,6 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 
-import Logo from "../Assets/NavLogo copy.png";
+import Logo from "/thereactors/NavLogo copy.png";
 import { useState } from "react";
 import SavedJobs from "./SavedJobs";
 import "../index.css";

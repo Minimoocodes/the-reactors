@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 
 function App() {
   const data = json;
-  console.log(data["backend-developer"]);
 
   const [jobDetails, setJobDetails] = useState([]);
   const [savedJobs, setSavedJobs] = useState([]);
@@ -30,6 +29,7 @@ function App() {
       <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       <Routes>
         <Route index element={<LandingPage />} />
+        <Route path="/thereactors/" element={<LandingPage />} />
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
         <Route path="/profiles" element={<ProfilePage />} />
         <Route

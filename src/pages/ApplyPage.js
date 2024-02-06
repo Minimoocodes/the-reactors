@@ -15,7 +15,6 @@ export default function ApplyPage({ jsonData }) {
     const formData = new FormData(form);
 
     const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
   }
 
   const [message, setMessage] = useState(false);
