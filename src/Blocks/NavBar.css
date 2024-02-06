@@ -1,5 +1,3 @@
-
-
 .nav-text {
   display: inline-block;
   position: relative;
@@ -12,7 +10,7 @@
   margin-top: 0.1rem;
   margin-inline: 1.3rem;
   /* color: #2e1b96; */
-} 
+}
 
 .bg-body-tertiary {
   width: 100vw;
@@ -39,7 +37,7 @@
   filter: blur(0);
   text-decoration: none;
   color: #2e1b96;
-} 
+}
 
 .nav-text:before {
   content: "";
@@ -48,7 +46,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #09D0D8;
+  background: #09d0d8;
   border-radius: 10px;
   transition: 0.5s;
   transform-origin: right;
@@ -63,8 +61,7 @@
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
-} 
-
+}
 
 .nav-text.saved-jobs:before {
   cursor: pointer;
@@ -75,4 +72,25 @@
 
 .nav-text.saved-jobs {
   cursor: pointer;
+}
+
+.navbar_container {
+  min-height: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  display: flex;
+  font-size: 1.3em;
+  color: "#FFD801";
+  gap: 2;
+  background-color: "#D3D3D340";
+}
+
+.navbar_something {
+  margin-left: auto;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: "#09D0D8";
 }
