@@ -33,11 +33,9 @@ function App() {
     <div>
       <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       <Routes>
+        <Route index element={<LandingPage navigate={handleNavigation} />} />
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
-
         <Route path="/profiles" element={<ProfilePage />} />
-
-        <Route path="/" element={<LandingPage navigate={handleNavigation} />} />
         <Route
           path="/warm"
           element={

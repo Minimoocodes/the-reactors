@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Warmbg from "../Assets/warm_weather.png";
+import Coldbg from "../Assets/cold_weather.png";
 
 const warmCities = [
   "Dubai",
@@ -26,8 +28,8 @@ const coldCities = [
 const WarmOrColdCard = ({ warmOrColdDisplay }) => {
   //warmorcoldimages, an object with warm and cold inside that is links to different images to be used as backgrounds
   const warmorcoldimages = {
-    warm: "/image/warm_weather.png",
-    cold: "/image/cold_weather.png",
+    warm: { Warmbg },
+    cold: { Coldbg },
   };
 
   //isWarm is true when warmOrColdDisplay equals "warm"
