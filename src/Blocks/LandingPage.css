@@ -17,9 +17,6 @@
   flex: 1;
 }
 
-.button_looing_for_jobs {
-}
-
 .landing-page__tech {
   width: 500px;
 }
@@ -65,4 +62,51 @@
   font-size: 4rem;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 640px) {
+  .landing-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .landing-page__logo {
+    width: 10rem;
+  }
+
+  .landing-page__text {
+    margin-top: 9rem;
+    font-size: 1.5rem;
+  }
+
+  .landingpage_button {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .landing-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .landing-page__logo {
+    width: 10rem;
+  }
+
+  .landing-page__text {
+    margin-top: 7em;
+    font-size: 2rem;
+  }
+
+  .landingpage_button {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }
