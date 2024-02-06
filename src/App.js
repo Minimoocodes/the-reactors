@@ -6,7 +6,6 @@ import ColdJobs from "./pages/ColdJobs";
 import ApplyPage from "./pages/ApplyPage";
 import WarmOrColdPage from "./pages/WarmOrColdPage";
 import NavBar from "./components/NavBar";
-
 import LandingPage from "./pages/LandingPage";
 import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
