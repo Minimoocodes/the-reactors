@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { Routes, Route } from "react-router-dom";
 import WarmJobs from "./pages/WarmJobs";
 import ColdJobs from "./pages/ColdJobs";
