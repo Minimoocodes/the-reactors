@@ -3,7 +3,7 @@ import landinglogo from "../Assets/reactorslandinglogo_transp.png";
 import { Link } from "react-router-dom";
 import tech from "../Assets/tech.png";
 
-export default function LandingPage({ navigate }) {
+export default function LandingPage() {
   return (
     <div>
       <div className="landing-page__wrapper">

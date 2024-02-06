@@ -25,15 +25,11 @@ function App() {
     navigate("/apply");
   }
 
-  function handleNavigation(job) {
-    navigate(`/${job}`);
-  }
-
   return (
     <div>
       <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       <Routes>
-        <Route index element={<LandingPage navigate={handleNavigation} />} />
+        <Route index element={<LandingPage />} />
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
         <Route path="/profiles" element={<ProfilePage />} />
         <Route
