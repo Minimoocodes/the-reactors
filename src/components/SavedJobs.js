@@ -6,7 +6,6 @@ const SavedJobs = ({ savedJobs, setSavedJobs }) => {
   const handleRemove = (item) => {
     const updatedJobs = savedJobs.filter((jobs) => jobs !== item);
     setSavedJobs(updatedJobs);
-    console.log(item, "is now removed");
   };
   return (
     <div className="saved_jobs">
