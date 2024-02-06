@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/the-reactors/static/css/main.c424eed7.css",
+    "main.js": "/the-reactors/static/js/main.30c4551b.js",
+    "static/js/787.eb7b534d.chunk.js": "/the-reactors/static/js/787.eb7b534d.chunk.js",
+    "static/media/tech.png": "/the-reactors/static/media/tech.9d0b1fb68ed6f99fa25b.png",
+    "static/media/Inter-Regular.ttf": "/the-reactors/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/reactorslandinglogo_transp.png": "/the-reactors/static/media/reactorslandinglogo_transp.db6c7b7e88ef9b916e8b.png",
+    "static/media/NavLogo copy.png": "/the-reactors/static/media/NavLogo copy.c7d0a66cf64ec092d66d.png",
+    "index.html": "/the-reactors/index.html",
+    "main.c424eed7.css.map": "/the-reactors/static/css/main.c424eed7.css.map",
+    "main.30c4551b.js.map": "/the-reactors/static/js/main.30c4551b.js.map",
+    "787.eb7b534d.chunk.js.map": "/the-reactors/static/js/787.eb7b534d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c424eed7.css",
+    "static/js/main.30c4551b.js"
+  ]
+}
