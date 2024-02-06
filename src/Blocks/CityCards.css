@@ -3,13 +3,12 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  max-width: 84rem;
+  width: 100vw;
   justify-content: center;
   margin: 4rem auto;
   padding: 1rem;
   width: 100vw;
 }
-
 
 /* City Card */
 .div_wrap {
