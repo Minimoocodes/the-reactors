@@ -30,16 +30,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
         <Link to="/">
           <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
         </Link>
-        <div
-          style={{
-            marginLeft: "auto",
-            display: "flex",
-            paddingLeft: 10,
-            paddingRight: 20,
-            paddingTop: 10,
-            color: "#09D0D8",
-          }}
-        >
+        <div className="navbar_something">
           <div className="nav-menu">
             <Link
               to="/"
