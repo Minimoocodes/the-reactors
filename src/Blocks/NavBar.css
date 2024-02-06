@@ -1,4 +1,4 @@
-<<<<<<< HEAD ======= .navbar_container {
+.navbar_container {
   width: 100vw;
 }
 
@@ -6,7 +6,7 @@
   display: flex;
 }
 
->>>>>>>main .nav-text {
+.nav-text {
   display: inline-block;
   position: relative;
   text-decoration: bold;
@@ -27,14 +27,15 @@
 } */
 
 .nav-text:hover,
-.nav-text:visited .active-link .nav-text.active {
+.nav-text:visited
+/* .active-link */
+/* .nav-text.active  */ {
   transition: 0.5s;
   transform: scale(1.4);
   opacity: 1;
   filter: blur(0);
   text-decoration: none;
-  color: #00ffff;
-  font-weight: bolder;
+  color: white;
 }
 
 .nav-text:before {
@@ -53,8 +54,9 @@
 }
 
 .nav-text:hover:before,
-.nav-text:visited:before .nav-text.active-link:before,
-.nav-text.active:before {
+.nav-text:visited:before
+/* .nav-text.active-link:before,
+.nav-text.active:before   */ {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
