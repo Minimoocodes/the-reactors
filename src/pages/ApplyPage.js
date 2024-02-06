@@ -29,6 +29,12 @@ export default function ApplyPage({ jsonData }) {
         <p className="job_title">{jsonData[id].title}</p>
         <p className="job_description">{jsonData[id].description}</p>
         <form method="post" onSubmit={handleSubmit} className="apply_form">
+          {message && (
+            <p className="apply_message" style={{ color: "#03EDEE" }}>
+              Thank you for your application!
+            </p>
+          )}
+
           <label>
             First and last name:{" "}
             <input
@@ -63,9 +69,6 @@ export default function ApplyPage({ jsonData }) {
           >
             Submit form
           </button>
-          {message && (
-            <p className="apply_message">Thank you for your application!</p>
-          )}
         </form>
       </div>
     </div>
