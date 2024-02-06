@@ -1,3 +1,5 @@
+import profile4 from "./Assets/image/Profile4.png";
+
 const profilesData = [
   {
     name: "Heidi",
@@ -34,7 +36,7 @@ const profilesData = [
   {
     name: "Petra",
     fullName: "Petra Cuturdic",
-    image: "/image/profile4.png",
+    image: profile4,
     skills: ["HTML", "CSS", "JavaScript", "React", "Typescript"],
     description:
       "A passionate Front-End Developer with a keen eye for creating engaging and responsive user interfaces. Proficient in HTML, CSS, and JavaScript, I bring creativity and functionality together to craft seamless web experiences.",
