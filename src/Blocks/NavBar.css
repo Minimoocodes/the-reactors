@@ -1,4 +1,12 @@
-.nav-text {
+<<<<<<< HEAD ======= .navbar_container {
+  width: 100vw;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+>>>>>>>main .nav-text {
   display: inline-block;
   position: relative;
   text-decoration: bold;
@@ -9,23 +17,14 @@
   transition: 0.5s;
   margin-top: 0.1rem;
   margin-inline: 1.3rem;
-  color: #eeeeee;
 }
 
-.bg-body-tertiary {
-  width: 100vw;
-}
-
-.nav_logo {
-  opacity: 1;
-}
-
-.me-auto {
+/* .me-auto {
   display: flex;
   align-items: center;
   position: absolute;
   right: 10rem;
-}
+} */
 
 .nav-text:hover,
 .nav-text:visited .active-link .nav-text.active {

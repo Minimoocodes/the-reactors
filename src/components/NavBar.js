@@ -18,8 +18,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
       <div
         style={{
           minHeight: 50,
-          paddingLeft: 10,
-          paddingRight: 20,
+          paddingInline: "5rem",
           paddingTop: 10,
           display: "flex",
           fontSize: "1.3em",

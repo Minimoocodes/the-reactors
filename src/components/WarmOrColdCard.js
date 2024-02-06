@@ -1,4 +1,3 @@
-import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
 const warmCities = [
@@ -7,20 +6,20 @@ const warmCities = [
   "Cebu",
   "Bali",
   "Sydney",
-  "Miami",
   "Singapore",
   "Rio de Janeiro",
+  "Marrakesh",
 ];
 
 const coldCities = [
   "Stockholm",
-  "New York",
-  "Paris",
-  "Seoul",
-  "London",
-  "Reykjavik",
   "Toronto",
+  "Seoul",
+  "Anchorage",
+  "New York",
+  "Reykjavik",
   "Beijing",
+  "Copenhagen",
 ];
 
 const WarmOrColdCard = ({ warmOrColdDisplay }) => {
