@@ -5,11 +5,11 @@
   padding: 5px;
   font-size: 23px;
   font-family: "inter";
-  /* color: #fff; */
+  color: #fff;
   transition: 0.5s;
   margin-top: 0.1rem;
   margin-inline: 1.3rem;
-  /* color: #2e1b96; */
+  color: #eeeeee;
 }
 
 .bg-body-tertiary {
@@ -28,9 +28,7 @@
 }
 
 .nav-text:hover,
-.nav-text:visited
-/* .active-link */
-/* .nav-text.active  */ {
+.nav-text:visited .active-link .nav-text.active {
   transition: 0.5s;
   transform: scale(1.4);
   opacity: 1;
@@ -56,9 +54,8 @@
 }
 
 .nav-text:hover:before,
-.nav-text:visited:before
-/* .nav-text.active-link:before,
-.nav-text.active:before   */ {
+.nav-text:visited:before .nav-text.active-link:before,
+.nav-text.active:before {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
