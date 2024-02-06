@@ -5,8 +5,9 @@
 
 .landing-page__wrapper {
   flex: 2;
-  min-height: 80vh;
-  max-height: 90vh;
+  min-height: 87vh;
+
+  margin: auto;
 }
 
 .looking-for-job__wrapper {
@@ -24,6 +25,7 @@
 .landing-page__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-width: 100vh;
 }
 
 .title__wrapper {
@@ -63,7 +65,6 @@
   cursor: pointer;
   margin-top: 3rem;
 }
-
 
 @media screen and (max-width: 640px) {
   .landing-page__wrapper {

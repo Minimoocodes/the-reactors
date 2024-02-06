@@ -15,18 +15,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
 
   return (
     <div className="navbar_container">
-      <div
-        style={{
-          minHeight: 50,
-          paddingInline: "5rem",
-          paddingTop: 10,
-          display: "flex",
-          fontSize: "1.3em",
-          color: "#FFD801",
-          gap: 2,
-          backgroundColor: "#D3D3D340",
-        }}
-      >
+      <div className="sub_container">
         <Link to="/">
           <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
         </Link>

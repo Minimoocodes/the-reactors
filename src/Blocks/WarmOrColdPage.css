@@ -10,6 +10,8 @@ a:visited {
 
 .WarmOrCOldPage {
   min-height: 81.2vh;
+  min-width: 100vw;
+  min-height: 80vh;
 }
 
 .WarmOrCold_container {
@@ -44,7 +46,7 @@ a:visited {
 .WarmOrColdCard_content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.3rem;
   align-items: center;
   &:after,
   &:before {
@@ -75,18 +77,23 @@ a:visited {
 /*font*/
 .findajob_h1 {
   margin-top: 0;
+  color: #03edee;
   color: #09d0d8;
 }
 
 .findajob_h2 {
   margin-top: 2rem;
-  color: #09d0d8;
+  color: #c90090;
 }
 
-.findajob_ul {
-  margin: 0;
+.warmlist_li {
+  background-color: rgba(191, 191, 191, 0.708);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
-.findajob_li {
-  font-size: 1rem;
+.coldlist_li {
+  background-color: rgba(191, 191, 191, 0.708);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
 }

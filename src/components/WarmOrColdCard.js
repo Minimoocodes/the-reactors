@@ -49,13 +49,13 @@ const WarmOrColdCard = ({ warmOrColdDisplay }) => {
           otherwise map coldCities and make a list of those cities in that array */}
           {isWarm
             ? warmCities.map((city) => (
-                <ul className="findajob_ul">
-                  <li className="findajob_li">{city}</li>
+                <ul>
+                  <li className="warmlist_li">{city}</li>
                 </ul>
               ))
             : coldCities.map((city) => (
-                <ul className="findajob_ul">
-                  <li className="findajob_li">{city}</li>
+                <ul>
+                  <li className="coldlist_li">{city}</li>
                 </ul>
               ))}
         </div>

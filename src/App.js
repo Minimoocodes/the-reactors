@@ -33,7 +33,6 @@ function App() {
 
   return (
     <div>
-      {/* <NavbarRP savedJobs={savedJobs} setSavedJobs={setSavedJobs} /> */}
       <NavBar savedJobs={savedJobs} setSavedJobs={setSavedJobs} />
       <Routes>
         <Route path="/warmorcold" element={<WarmOrColdPage />} />
