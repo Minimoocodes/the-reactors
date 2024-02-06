@@ -15,7 +15,7 @@ function NavbarRP({ savedJobs, setSavedJobs }) {
     setShowJobsCart(!showJobsCart);
   };
   return (
-    <Navbar expand="lg" className="bg-secondary .bg-gradient">
+    <Navbar expand="lg" className="bg-secondary bg-gradient">
       <Link to="/">
         <Navbar.Brand href="#home">
           {" "}
