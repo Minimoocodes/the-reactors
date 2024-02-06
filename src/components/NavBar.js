@@ -22,7 +22,7 @@ function NavBar({ savedJobs, setSavedJobs }) {
           paddingTop: 10,
           display: "flex",
           fontSize: "1.3em",
-          width: "100vw",
+          color: "#FFD801",
           gap: 2,
           backgroundColor: "#D3D3D340",
         }}
@@ -30,7 +30,16 @@ function NavBar({ savedJobs, setSavedJobs }) {
         <Link to="/">
           <img src={Logo} alt="NavLogo" style={{ height: 50, marginTop: 5 }} />
         </Link>
-        <div className="navbar_something">
+        <div
+          style={{
+            marginLeft: "auto",
+            display: "flex",
+            paddingLeft: 10,
+            paddingRight: 20,
+            paddingTop: 10,
+            color: "#09D0D8",
+          }}
+        >
           <div className="nav-menu">
             <Link
               to="/"
