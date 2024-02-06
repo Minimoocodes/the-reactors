@@ -2,6 +2,17 @@
   width: 100vw;
 }
 
+.sub_container {
+  min-height: 4rem;
+  padding-inline: 5rem;
+  padding-top: 10;
+  display: flex;
+  font-size: 1.3em;
+  color: #ffd801;
+  gap: 2;
+  background-color: #d3d3d340;
+}
+
 .nav-menu {
   display: flex;
 }
@@ -71,4 +82,31 @@
 
 .nav-text.saved-jobs {
   cursor: pointer;
+}
+
+/* media quarry */
+
+@media only screen and (max-width: 360px) {
+  .navbar_container {
+    padding: 2rem px;
+  }
+
+  .nav-menu {
+  }
+
+  .nav-text {
+    font-size: 13px;
+  }
+
+  .sub_container {
+    min-height: 60px;
+
+    padding-top: 13;
+
+    font-size: "1.3em";
+    color: "#FFD801";
+    gap: 1;
+    background-color: #d3d3d340;
+    padding: 0;
+  }
 }

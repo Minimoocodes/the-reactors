@@ -1,13 +1,12 @@
 .landing-page__container {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
 }
 
 .landing-page__wrapper {
   flex: 2;
   min-height: 87vh;
-  max-width: 97rem;
+
   margin: auto;
 }
 
