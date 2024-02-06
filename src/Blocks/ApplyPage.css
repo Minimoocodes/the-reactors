@@ -6,11 +6,13 @@
   max-width: 75%;
   margin: 1rem auto;
   min-height: 83vh;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .job_title {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: #09d0d8;
+  font-weight: bolder;
 }
 
 .job_description {
@@ -19,7 +21,7 @@
 }
 
 .apply_form {
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -56,15 +58,16 @@
   color: white;
   font-size: 1.3rem;
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   padding: 0.3rem;
   padding: 0.5rem;
   border: transparent;
 }
 
 .apply_message {
-  font-size: 1.5rem;
-  margin-bottom: 4rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background-color: #7c0458;
 }
 
 @media only screen and (max-width: 640px) {

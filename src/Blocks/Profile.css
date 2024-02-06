@@ -9,6 +9,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 4rem;
   width: 100vw;
+  height: auto;
+  min-height: 80vh;
 }
 
 .profile-image {
