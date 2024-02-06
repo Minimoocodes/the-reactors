@@ -1,5 +1,5 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Routes, Route } from "react-router-dom";
 import WarmJobs from "./pages/WarmJobs";
 import ColdJobs from "./pages/ColdJobs";
