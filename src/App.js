@@ -1,12 +1,10 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import WarmJobs from "./pages/WarmJobs";
 import ColdJobs from "./pages/ColdJobs";
 import ApplyPage from "./pages/ApplyPage";
 import WarmOrColdPage from "./pages/WarmOrColdPage";
 import NavBar from "./components/NavBar";
-import NavbarRP from "./components/NavbarRP";
 import LandingPage from "./pages/LandingPage";
 import json from "./jobAds.json";
 import { useNavigate } from "react-router-dom";
