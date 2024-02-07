@@ -10,7 +10,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
   const [selectedJobs, setSelectedJobs] = useState([]);
 
   const showRandomJobs = () => {
-    // Check if selected jobs are stored in localStorage
+    // gets the  data from the browser's local storage then uses a key with  the value of the city as a variable.
     const storedJobs = JSON.parse(localStorage.getItem(`selectedJobs_${city}`));
 
     if (storedJobs) {
@@ -21,7 +21,7 @@ const JobListBox = ({ job, city, savedJobs, setSavedJobs }) => {
       let selectedJobs = randomJobArray.slice(0, randomNumOfJobs);
       setSelectedJobs(selectedJobs);
 
-      // Store selected jobs in localStorage
+      // Store selected jobs in localStorage. setItem stores data in localStorage. selectedJobs(string) and the city (variable) is the key where the data will be stored. JSON.stringyfy converts the selectedJobs data (can be an object or array) into a string so it can be stored in localStorage.
       localStorage.setItem(
         `selectedJobs_${city}`,
         JSON.stringify(selectedJobs)
