@@ -11,6 +11,7 @@ const Profile = ({
   onToggleProfile,
   fullName,
 }) => {
+  // line 16-21 responsible for the pop up visibility
   const toggleHidden = () => {
     onToggleProfile(name);
   };
@@ -19,6 +20,7 @@ const Profile = ({
     onToggleProfile(null);
   };
 
+  // conditionally renders  detailed profile  when its active
   return (
     <div className="hidden-profile-container">
       {isActive && (
@@ -90,7 +92,7 @@ const Profile = ({
         </div>
       )}
 
-      {/* profile container div */}
+      {/* profile container div. not the pop up but the page where 4 profiles are shown. so when there is a active/clicked profile the other profiles will be hidden  */}
       {!isActive && (
         <div
           className="introduction"
