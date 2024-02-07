@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 function NavBar({ savedJobs, setSavedJobs }) {
   const [showJobsCart, setShowJobsCart] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
 
   const showSavedJobs = () => {
     setShowJobsCart(!showJobsCart);
@@ -30,49 +29,9 @@ function NavBar({ savedJobs, setSavedJobs }) {
           }}
         >
           <div className="nav-menu">
-            <Link
-              to="/"
-              className={`nav-link ${
-                activeLink === "home" ? "active-link" : ""
-              }`}
-              onClick={() => setActiveLink("home")}
-            >
-              <p
-                className={`nav-text ${activeLink === "home" ? "active" : ""}`}
-              >
-                Home
-              </p>
-            </Link>
-            <Link
-              to="/warmorcold"
-              className={`nav-link ${
-                activeLink === "findJob" ? "active-link" : ""
-              }`}
-              onClick={() => setActiveLink("findJob")}
-            >
-              <p
-                className={`nav-text ${
-                  activeLink === "findJob" ? "active" : ""
-                }`}
-              >
-                Find a job
-              </p>
-            </Link>
-            <Link
-              to="/profiles"
-              className={`nav-link ${
-                activeLink === "aboutUs" ? "active-link" : ""
-              }`}
-              onClick={() => setActiveLink("aboutUs")}
-            >
-              <p
-                className={`nav-text ${
-                  activeLink === "aboutUs" ? "active" : ""
-                }`}
-              >
-                About us
-              </p>
-            </Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/warmorcold">Find a job</NavLink>
+            <NavLink to="/profiles">About us</NavLink>
             <p
               className={`nav-text saved-jobs ${showJobsCart ? "active" : ""}`}
               onClick={showSavedJobs}
@@ -88,5 +47,11 @@ function NavBar({ savedJobs, setSavedJobs }) {
     </div>
   );
 }
+
+const NavLink = ({ to, children }) => (
+  <Link to={to} className="nav-link">
+    <p className="nav-text">{children}</p>
+  </Link>
+);
 
 export default NavBar;
